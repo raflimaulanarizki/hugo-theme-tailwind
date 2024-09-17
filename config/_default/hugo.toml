@@ -1,41 +1,49 @@
-baseURL = "https://blog.raflimaulanarizki.site/"
-title = "Hugo Theme Tailwind Example Site"
-author = "Your Name"
-copyright = "Your Name"
-paginate = 10
-languageCode = "en"
-theme = "tailwind"
+baseURL = 'https://blog.raflimaulanarizki.site/'
+title = 'My New Hugo Site'
+copyright = ""
+languageCode = 'en'
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
 
 [markup]
-  _merge = "deep"
+[markup.highlight]
+  # lineNos = true
+  noClasses = false
+[markup.goldmark]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.extensions]
+    [markup.goldmark.extensions.cjk]
+      enable = true
+      eastAsianLineBreaks = true
+      escapedSpace = true
 
-[params]
-  # dir name of your blog content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "post"
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
 
-  [params.header]
-    logo = "logo.webp"
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
 
-  [params.footer]
-    since = 2023
-    poweredby = true
+  [privacy.instagram]
+    disabled = false
+    simple = true
 
-[menu]
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
 
-  [[menu.main]]
-    identifier = "post"
-    name = "Post"
-    pageRef = "/post"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    pageRef = "/about"
-    weight = 20
-
-[taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.120.0"
