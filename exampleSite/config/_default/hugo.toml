@@ -1,7 +1,8 @@
-baseURL = "https://gohugo.io"
-title = "Hugo Theme Tailwind Example Site"
-copyright = "Xiaoliang Wang"
-paginate = 3 # for demonstration of pagination
+baseURL = 'https://blog.raflimaulanarizki.site/'
+title = "Let's Do It"
+author = "Rafli Maulana Rizki"
+copyright = "Rafli Maulana Rizki"
+paginate = 5 # for demonstration of pagination
 languageCode = "en"
 defaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -36,3 +37,9 @@ series = "series"
   [privacy.youtube]
     disabled = false
     privacyEnhanced = true
+
+[[social_media.items]]
+  enabled = false
+  title = 'Facebook'
+  icon = 'brand-facebook'
+  link = 'https://www.facebook.com/'

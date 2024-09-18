@@ -1,6 +1,7 @@
 baseURL = 'https://blog.raflimaulanarizki.site/'
-title = 'My New Hugo Site'
-copyright = ""
+title = "Let's Do It"
+author = "Rafli Maulana Rizki"
+copyright = "Rafli Maulana Rizki"
 languageCode = 'en'
 defaultContentLanguage = "en"
 hasCJKLanguage = true
