@@ -1,6 +1,7 @@
 ---
 title: "Rafli Maulana Rizki"
-description: "Knowledge is the most powerful weapon, and learning is the way to achieve it. However, istiqomah is a challenge that is not easy to overcome."
+description: false
+#description: "Knowledge is the most powerful weapon, and learning is the way to achieve it. However, istiqomah is a challenge that is not easy to overcome."
 #date: "2019-02-28"
 aliases: ["about-us", "about-hugo", "contact"]
 #author: "Rafli Maulana Rizki"
