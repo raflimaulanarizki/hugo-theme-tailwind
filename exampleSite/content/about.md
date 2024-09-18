@@ -14,7 +14,7 @@ Playing on the Physical layer, Data Link, Network, Transport and Application.
 
 Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv </a>or reach me at <a href="https://mailhide.io/e/vhYpVUOr" target="_blank"> email</a>.
 
-### Network Devices
+<h3>Network Devices</h3>
 <div style="display: flex;">
     <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="margin: 0 2px " alt="cisco" />
     <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="juniper" />
