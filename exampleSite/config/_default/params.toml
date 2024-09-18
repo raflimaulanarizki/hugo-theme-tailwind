@@ -29,13 +29,14 @@ showAuthor = true
   repo = "raflimaulanarizki/hugo-theme-tailwind"
   repoID = "R_kgDOMzEncw"
   category = "Announcements"
-  categoryID = "DIC_kwDOKjVJHM4CafqS"
+  categoryID = "DIC_kwDOMzEnc84Cik_L"
   mapping = "pathname"
   strict = "0"
   reactionsEnabled = "1"
   emitMetadata = "0"
   inputPosition = "bottom"
   lang = "en"
+
 
 [social_media]
   [[social_media.items]]
