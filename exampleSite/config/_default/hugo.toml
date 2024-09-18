@@ -11,6 +11,7 @@ enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 theme = "hugo-theme-tailwind"
 enableGitInfo = true
+CurrentYear = 2024
 
 [markup]
   _merge = "deep"
@@ -40,6 +41,6 @@ series = "series"
 
 [[social_media.items]]
   enabled = false
-  title = 'Facebook'
-  icon = 'brand-facebook'
-  link = 'https://www.facebook.com/'
+  title = 'LinkedIn'
+  icon = 'brand-linkedin'
+  link = 'https://www.linkedin.com/in/raflimaulanarizki/'
