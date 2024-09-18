@@ -38,9 +38,3 @@ series = "series"
   [privacy.youtube]
     disabled = false
     privacyEnhanced = true
-
-[[social_media.items]]
-  enabled = false
-  title = 'LinkedIn'
-  icon = 'brand-linkedin'
-  link = 'https://www.linkedin.com/in/raflimaulanarizki/'

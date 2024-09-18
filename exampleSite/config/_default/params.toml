@@ -39,33 +39,22 @@ showAuthor = true
 [social_media]
   [[social_media.items]]
     enabled = true
-    title = 'Facebook'
-    icon = 'brand-facebook'
-    link = 'https://www.facebook.com/'
-
-  [[social_media.items]]
-    enabled = true
-    title = 'Twitter'
-    icon = 'brand-x'
-    link = 'https://twitter.com/__PurPleFoX__'
-
-  [[social_media.items]]
-    enabled = true
-    title = 'Instagram'
-    icon = 'brand-instagram'
-    link = 'https://www.instagram.com/'
-
-  [[social_media.items]]
-    enabled = true
     title = 'LinkedIn'
     icon = 'brand-linkedin'
-    link = 'https://www.linkedin.com/'
+    link = 'https://www.linkedin.com/in/raflimaulanarizki/'
 
   [[social_media.items]]
     enabled = true
     title = 'Github'
     icon = 'brand-github'
-    link = 'https://github.com/tomowang'
+    link = 'https://github.com/raflimaulanarizki'
+
+  [[social_media.items]]
+    enabled = true
+    title = 'Email'
+    icon = 'email'
+    link = 'https://gmail.com/'
+
 
 [pwa]
   enabled = true
