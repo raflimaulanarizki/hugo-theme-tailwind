@@ -13,6 +13,7 @@ showAuthor = true
 [author]
   name = "Muhamad Rafli Maulana Rizki"
   email = "raflimaulanarizki8@gmail.com"
+  link = 'https://gmail.com/'
 
 [header]
   logo = "logo.svg"
