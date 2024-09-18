@@ -4,6 +4,7 @@ description: "Knowledge is the most powerful weapon, and learning is the way to 
 #date: "2019-02-28"
 aliases: ["about-us", "about-hugo", "contact"]
 #author: "Rafli Maulana Rizki"
+toc: false
 ---
 
 Hallo. I’m Rafli, a Junior Network Engineer, Network Automation enthusiasts, and System Administration.
