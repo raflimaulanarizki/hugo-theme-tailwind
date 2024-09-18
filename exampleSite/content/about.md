@@ -23,10 +23,11 @@ Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv
     <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ruijie" />
 </div>
 
-### Server Devices
+<h3>Server Devices</h3>
 <img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="margin: 0 1px"/>
+![HP](https://img.shields.io/badge/HP-52b5f7?style=for-the-badge&logo=HP&logoColor=white)
 
-### System
+<h3>System</h3>
 <div style="display: flex;">
     <img src="https://img.shields.io/badge/-UBUNTU-orange?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="ubuntu" />
     <img src="https://img.shields.io/badge/-DEBIAN-767778?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
