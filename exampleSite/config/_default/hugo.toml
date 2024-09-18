@@ -21,6 +21,19 @@ category = "categories"
 tag = "tags"
 series = "series"
 
+[menu]
+  [[menu.main]]
+    identifier = "post"
+    name = "Post"
+    pageRef = "/post"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 20
+
 [privacy]
   [privacy.vimeo]
     disabled = false
