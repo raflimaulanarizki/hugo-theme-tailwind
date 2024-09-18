@@ -28,7 +28,7 @@ Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv
 <h3>Server Devices</h3>
 
 ![HP](https://img.shields.io/badge/HP-52b5f7?style=for-the-badge&logo=HP&logoColor=white)
-<img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="margin: 0 1px"/>
+![DELL](https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge)
 
 
 <h3>System</h3>
@@ -36,4 +36,6 @@ Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv
     <img src="https://img.shields.io/badge/-UBUNTU-orange?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="ubuntu" />
     <img src="https://img.shields.io/badge/-DEBIAN-767778?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
     <img src="https://img.shields.io/badge/-CENTOS-blue?logo=centos&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
+    <img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="margin: 0 1px"/>
+
 </div>
