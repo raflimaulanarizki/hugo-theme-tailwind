@@ -4,6 +4,7 @@ title: "OpenVPN - Mikrotik"
 date: "2023-08-06"
 pin: 
 image: "/images/mikrotik-openvpn.png"
+description: "Ada salah satu perusahan, yang mana perusahaan ini memberlakukan pekerjaan untuk karyawannya secara hybrid WFO dan WFA"
 math: true
 tags : [
     "Mikrotik",
@@ -13,6 +14,7 @@ categories : [
     "VPN",
 ]
 ---
+
 Ada salah satu perusahan, yang mana perusahaan ini memberlakukan pekerjaan untuk karyawannya secara hybrid WFO dan WFA. Setelah itu, perusahaan ini juga memiliki sebuah aplikasi private yang hanya bisa di buka menggunakan network kantor.
 
 Masalah ini muncul pada saat karyawan sedang bekerjaa WFA/WFH, dikarenkan aplikasi pada perusahaan tersebut hanya bisa di buka menggunakan network kantor saja. lalu bagaimana caranya agar hp/laptop di rumah bisa terkoneksi dengan network yang ada pada kantor, yakni menggunakan <b>VPN</b>.
