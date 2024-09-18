@@ -16,18 +16,18 @@ Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv
 
 <p class="describe-text">Network Devices</p>
 <p>
-    <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="width: auto;" alt="cisco" />
-    <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="width: auto;" alt="juniper" />
-    <img src="https://img.shields.io/badge/-UBIQUITI-00c3ff?logo=ubiquiti&logoColor=white&style=for-the-badge" style="width: auto;" alt="ubiquiti" />
-    <img src="https://img.shields.io/badge/-MIKROTIK-lightgrey?logo=mikrotik&logoColor=white&style=for-the-badge" style="width: auto;" alt="mikrotik" />
-    <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="width: auto;" alt="ruijie" />
+    <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="cisco" />
+    <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="juniper" />
+    <img src="https://img.shields.io/badge/-UBIQUITI-00c3ff?logo=ubiquiti&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="ubiquiti" />
+    <img src="https://img.shields.io/badge/-MIKROTIK-lightgrey?logo=mikrotik&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="mikrotik" />
+    <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="ruijie" />
 </p>
 <p class="describe-text">Server Devices</p>
-<img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="display: block; margin-top: none;"/>
+<img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="display: block; margin-top: 0;"/>
 
 <p class="describe-text">System</p>
 <p>
-    <img src="https://img.shields.io/badge/-UBUNTU-orange?logo=ubuntu&logoColor=white&style=for-the-badge" style="width: auto;" alt="ubuntu" />
-    <img src="https://img.shields.io/badge/-DEBIAN-767778?logo=ubuntu&logoColor=white&style=for-the-badge" style="width: auto;" alt="debian" />
-    <img src="https://img.shields.io/badge/-CENTOS-blue?logo=centos&logoColor=white&style=for-the-badge" style="width: auto;" alt="debian" />
+    <img src="https://img.shields.io/badge/-UBUNTU-orange?logo=ubuntu&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="ubuntu" />
+    <img src="https://img.shields.io/badge/-DEBIAN-767778?logo=ubuntu&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="debian" />
+    <img src="https://img.shields.io/badge/-CENTOS-blue?logo=centos&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="debian" />
 </p>
