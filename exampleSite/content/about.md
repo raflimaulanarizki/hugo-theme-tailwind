@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "HI, Let me introduce myself"
+description: "Rafli Maulana Rizki, Istiqomah is not an easy thing"
 #date: "2019-02-28"
 aliases: ["about-us", "about-hugo", "contact"]
 author: "Rafli Maulana Rizki"

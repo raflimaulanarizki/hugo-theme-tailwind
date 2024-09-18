@@ -11,14 +11,14 @@ jsonLD = true
 showAuthor = true
 
 [author]
-  name = "Xiaoliang Wang"
-  email = "user@example.com"
+  name = "Muhamad Rafli Maulana Rizki"
+  email = "raflimaulanarizki8@gmail.com"
 
 [header]
   logo = "logo.svg"
 
 [footer]
-  since = 2022
+  since = 2024
   poweredby = true
 
 # giscus is comments system powered by GitHub Discussions
