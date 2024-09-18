@@ -5,7 +5,7 @@ title: "Rafli Maulana Rizki"
 aliases: ["about-us", "about-hugo", "contact"]
 #author: "Rafli Maulana Rizki"
 toc: false
-readingtime: false
+readingTime: false
 ---
 
 Hallo. I’m Rafli, a Junior Network Engineer, Network Automation enthusiasts, and System Administration.
