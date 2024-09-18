@@ -53,7 +53,7 @@ showAuthor = true
   [[social_media.items]]
     enabled = true
     title = 'Email'
-    icon = 'email'
+    icon = 'mail'
     link = 'https://gmail.com/'
 
 
