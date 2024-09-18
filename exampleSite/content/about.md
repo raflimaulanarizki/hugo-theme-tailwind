@@ -14,22 +14,21 @@ Playing on the Physical layer, Data Link, Network, Transport and Application.
 
 Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv </a>or reach me at <a href="https://mailhide.io/e/vhYpVUOr" target="_blank"> email</a>.
 
-<p class="describe-text">Network Devices</p>
+### Network Devices
 <div style="display: flex;">
-    <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="cisco" />
-    <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="juniper" />
-    <img src="https://img.shields.io/badge/-UBIQUITI-00c3ff?logo=ubiquiti&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="ubiquiti" />
-    <img src="https://img.shields.io/badge/-MIKROTIK-lightgrey?logo=mikrotik&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="mikrotik" />
-    <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="ruijie" />
+    <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="margin: 0 2px " alt="cisco" />
+    <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="juniper" />
+    <img src="https://img.shields.io/badge/-UBIQUITI-00c3ff?logo=ubiquiti&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ubiquiti" />
+    <img src="https://img.shields.io/badge/-MIKROTIK-lightgrey?logo=mikrotik&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="mikrotik" />
+    <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ruijie" />
 </div>
 
+### Server Devices
+<img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="margin: 0 1px"/>
 
-<p class="describe-text">Server Devices</p>
-<img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="display: block; margin-top: 0;"/>
-
-<p class="describe-text">System</p>
-<p>
-    <img src="https://img.shields.io/badge/-UBUNTU-orange?logo=ubuntu&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="ubuntu" />
-    <img src="https://img.shields.io/badge/-DEBIAN-767778?logo=ubuntu&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="debian" />
-    <img src="https://img.shields.io/badge/-CENTOS-blue?logo=centos&logoColor=white&style=for-the-badge" style="display: block; margin-top: 0;" alt="debian" />
-</p>
+### System
+<div style="display: flex;">
+    <img src="https://img.shields.io/badge/-UBUNTU-orange?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="ubuntu" />
+    <img src="https://img.shields.io/badge/-DEBIAN-767778?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
+    <img src="https://img.shields.io/badge/-CENTOS-blue?logo=centos&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
+</div>
