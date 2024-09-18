@@ -26,8 +26,8 @@ showAuthor = true
 # generate configurations from https://giscus.app/
 [giscus]
   enabled = true
-  repo = "tomowang/hugo-theme-tailwind"
-  repoID = "R_kgDOKjVJHA"
+  repo = "raflimaulanarizki/hugo-theme-tailwind"
+  repoID = "R_kgDOMzEncw"
   category = "Announcements"
   categoryID = "DIC_kwDOKjVJHM4CafqS"
   mapping = "pathname"
