@@ -16,7 +16,7 @@ showAuthor = true
   link = 'https://gmail.com/'
 
 [header]
-  logo = "logo.svg"
+  logo = "logo1.png"
 
 [footer]
   since = 2024
