@@ -16,11 +16,11 @@ Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv
 
 <p class="describe-text">Network Devices</p>
 <div style="display: flex;">
-    <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="cisco" />
-    <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="juniper" />
-    <img src="https://img.shields.io/badge/-UBIQUITI-00c3ff?logo=ubiquiti&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ubiquiti" />
-    <img src="https://img.shields.io/badge/-MIKROTIK-lightgrey?logo=mikrotik&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="mikrotik" />
-    <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ruijie" />
+    <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="cisco" />
+    <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="juniper" />
+    <img src="https://img.shields.io/badge/-UBIQUITI-00c3ff?logo=ubiquiti&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="ubiquiti" />
+    <img src="https://img.shields.io/badge/-MIKROTIK-lightgrey?logo=mikrotik&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="mikrotik" />
+    <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="margin: 0 2px border-radius: 15px" alt="ruijie" />
 </div>
 
 
