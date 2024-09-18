@@ -54,7 +54,7 @@ showAuthor = true
     enabled = true
     title = 'Email'
     icon = 'mail'
-    link = 'https://gmail.com/'
+    link = 'https://mailhide.io/e/vhYpVUOr'
 
 
 [pwa]
