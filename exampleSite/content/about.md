@@ -15,8 +15,7 @@ Playing on the Physical layer, Data Link, Network, Transport and Application.
 Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv </a>or reach me at <a href="https://mailhide.io/e/vhYpVUOr" target="_blank"> email</a>.
 
 
-
-<h3>Network Devices</h3>
+<h3>Network</h3>
 <div style="display: flex;">
     <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="margin: 0 2px " alt="cisco" />
     <img src="https://img.shields.io/badge/-JUNIPER-green?logo=juniper&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="juniper" />
@@ -25,17 +24,9 @@ Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv
     <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ruijie" />
 </div>
 
-<h3>Server Devices</h3>
-
-![HP](https://img.shields.io/badge/HP-52b5f7?style=for-the-badge&logo=HP&logoColor=white)
-![DELL](https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge)
-
-
 <h3>System</h3>
 <div style="display: flex;">
     <img src="https://img.shields.io/badge/-UBUNTU-orange?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="ubuntu" />
     <img src="https://img.shields.io/badge/-DEBIAN-767778?logo=ubuntu&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
     <img src="https://img.shields.io/badge/-CENTOS-blue?logo=centos&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
-    <img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="margin: 0 1px"/>
-
 </div>
