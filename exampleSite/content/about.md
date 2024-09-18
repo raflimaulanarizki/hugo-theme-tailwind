@@ -14,6 +14,8 @@ Playing on the Physical layer, Data Link, Network, Transport and Application.
 
 Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv </a>or reach me at <a href="https://mailhide.io/e/vhYpVUOr" target="_blank"> email</a>.
 
+
+
 <h3>Network Devices</h3>
 <div style="display: flex;">
     <img src="https://img.shields.io/badge/-CISCO-informational?logo=cisco&logoColor=white&style=for-the-badge" style="margin: 0 2px " alt="cisco" />
@@ -24,8 +26,10 @@ Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv
 </div>
 
 <h3>Server Devices</h3>
-<img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="margin: 0 1px"/>
+
 ![HP](https://img.shields.io/badge/HP-52b5f7?style=for-the-badge&logo=HP&logoColor=white)
+<img src="https://img.shields.io/badge/-DELL-black?logo=dell&logoColor=white&style=for-the-badge" alt="dell" style="margin: 0 1px"/>
+
 
 <h3>System</h3>
 <div style="display: flex;">
