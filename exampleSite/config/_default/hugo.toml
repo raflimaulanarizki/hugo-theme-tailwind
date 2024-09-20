@@ -1,4 +1,4 @@
-baseURL = 'https://.raflimaulanarizki.site/about'
+baseURL = 'https://.raflimaulanarizki.site/'
 title = "Let's Do It"
 author = "Rafli Maulana Rizki"
 copyright = "Rafli Maulana Rizki"
@@ -26,13 +26,13 @@ series = "series"
     identifier = "about"
     name = "About"
     pageRef = "/about"
-    weight = 10
+    weight = 20
 
   [[menu.main]]
     identifier = "post"
     name = "Post"
     pageRef = "/post"
-    weight = 20
+    weight = 10
 
 [privacy]
   [privacy.vimeo]
