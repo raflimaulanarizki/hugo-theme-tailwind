@@ -4,7 +4,7 @@ subtitle = "Example site for hugo-theme-tailwind"
 
 # dir name of your blog content (default is `content/posts`).
 # the list of set content will show up on your index page (baseurl).
-contentTypeName = "post"
+contentTypeName = "about"
 
 jsonLD = true
 
@@ -13,7 +13,7 @@ showAuthor = true
 [author]
   name = "Muhamad Rafli Maulana Rizki"
   email = "raflimaulanarizki8@gmail.com"
-  link = 'https://gmail.com/'
+  link = 'https://gmail.com/' 
 
 [header]
   logo = "logo1.svg"
