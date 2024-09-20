@@ -1,10 +1,10 @@
 # SEO keywords and description for your site.
-keywords = "hugo, tailwind, tailwindcss, hugo theme, hugo theme tailwind"
-subtitle = "Example site for hugo-theme-tailwind"
+keywords = "raflimaulanarizki, Muhamad Rafli Maulana Rizki, hugo, tailwind, tailwindcss, hugo theme"
+subtitle = "My Blog Rafli"
 
 # dir name of your blog content (default is `content/posts`).
 # the list of set content will show up on your index page (baseurl).
-contentTypeName = "about"
+contentTypeName = "content/about"
 
 jsonLD = true
 
