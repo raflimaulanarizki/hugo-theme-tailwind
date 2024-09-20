@@ -13,7 +13,7 @@ Playing on the Physical layer, Data Link, Network, Transport and Application.
 
 <a href="https://github.com/raflimaulanarizki"><img src="https://img.shields.io/github/followers/raflimaulanarizki?style=social" style="width: auto;" /></a>
 
-Look at my <a href="https://raflimaulanarizki.github.io/cv/" target="_blank"> cv </a>or reach me at <a href="https://mailhide.io/e/vhYpVUOr" target="_blank"> email</a>.
+Look at my <a href="https://cv.raflimaulanarizki.site" target="_blank"> cv </a>or reach me at <a href="https://mailhide.io/e/vhYpVUOr" target="_blank"> email</a>.
 
 
 <h3>Network</h3>
