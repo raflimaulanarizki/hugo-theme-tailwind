@@ -21,6 +21,11 @@ category = "categories"
 tag = "tags"
 series = "series"
 
+[params]
+  # dir name of your blog content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "about"
+
 [menu]
   [[menu.main]]
     identifier = "about"
