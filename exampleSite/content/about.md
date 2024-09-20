@@ -1,6 +1,6 @@
 ---
 title: "Rafli Maulana Rizki"
-#description: "Knowledge is the most powerful weapon, and learning is the way to achieve it. However, istiqomah is a challenge that is not easy to overcome."
+#description: "."
 #date: "2019-02-28"
 aliases: ["about-us", "about-hugo", "contact"]
 author: false
@@ -11,7 +11,7 @@ Hallo. I’m Rafli, a Junior Network Engineer, Network Automation enthusiasts, a
 
 Playing on the Physical layer, Data Link, Network, Transport and Application.
 
-> don't do repetitive tasks, just automate them.-
+> Knowledge is the most powerful weapon, and learning is the way to achieve it. However, istiqomah is a challenge that is not easy to overcome.-
 
 <a href="https://github.com/raflimaulanarizki"><img src="https://img.shields.io/github/followers/raflimaulanarizki?style=social" style="width: auto;" /></a>
 
