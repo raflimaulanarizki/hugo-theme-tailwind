@@ -15,7 +15,7 @@ tags : [
 
 Failover adalah fitur yang digunakan untuk menjaga konektivitas network tetap stabil, jika terjadinya gangguan/down pada link Primary maka Failover ini akan memindahkan Traffic ke link Backup.
 
-Masalah Failover
+**Masalah Failover**
 
 ⇒ Failover terjadi dikarenakan router **tidak dapat ping** ke **default gateway** bukan ping ke internet. **lalu** **masalahnya** pada saat ping ke internet (8.8.8.8) bermasalah dan ip default gateway tetap terkoneksi atau bisa di ping maka **Failover tidak akan berkerja.**
 
@@ -88,7 +88,7 @@ Setting network dari topologi diatas.
     ![routenetwatch.png](./images/routenetwatch.png)
     
 3. Set Configure Netwatch
-    <img src="./images/netwatch1.png" alt="netwatch1" style="width: 40%;">
+    <img src="./images/netwatch1.png" alt="netwatch1">
     
     Hosts : IP Internet yang di monitoring
 
@@ -96,13 +96,13 @@ Setting network dari topologi diatas.
     
     Timeout : Timeout Hosts. 
 
-    <img src="./images/netwatch2.png" alt="netwatch2" style="width: 40%;">
+    <img src="./images/netwatch2.png" alt="netwatch2">
 
     ⇒ Set disable route dengan comment “Utama”
 
     Otomatis Route backup akan menerusakan traffic internet jika status DOWN.
     
-    <img src="./images/netwatch3.png" alt="netwatch3" style="width: 40%;">
+    <img src="./images/netwatch3.png" alt="netwatch3">
 
     ⇒ Set enable route dengan comment “Utama”
 
