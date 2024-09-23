@@ -75,7 +75,7 @@ end.
 
 ## Pertemuan#2
 
-```pascal {linenos=true}
+```h {linenos=true}
 //Deklasi Program
 program Pertemuan2;
 uses crt;
