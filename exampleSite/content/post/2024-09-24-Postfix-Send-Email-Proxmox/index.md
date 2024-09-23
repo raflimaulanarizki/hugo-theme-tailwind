@@ -5,6 +5,7 @@ date: "2024-09-24"
 pin: 
 image: "/images/logo.png"
 description: "Postfix adalah suatu software open-source yang berfungsi sebagai MTA (Mail Transfer Agent) yang digunakan untuk mengirim, menerima, dan memfilter email, Cara Postfix berkomunikasi yakni menggunakan protocol SMTP."
+math: true
 tags : [
     "Proxmox",
 ]
