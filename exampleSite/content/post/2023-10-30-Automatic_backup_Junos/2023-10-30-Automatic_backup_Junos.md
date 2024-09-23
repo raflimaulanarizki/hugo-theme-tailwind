@@ -1,9 +1,9 @@
 ---
 author: Muhamad Rafli Maulana Rizki
-title: Manually and Automatically Backup - Juniper
+title: "Manually and Automatically Backup - Juniper"
 date: 2023-10-30
 pin: 
-image: ./images/Juniper-Automatic_Backup.jpeg
+image: "./images/Juniper-Automatic_Backup.jpeg"
 description: "Konfigurasi Backup Otomatis Juniper dan Manual menggunakan FTP server"
 math: true
 tags : [
