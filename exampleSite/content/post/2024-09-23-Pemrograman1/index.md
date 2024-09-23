@@ -128,9 +128,7 @@ end.
 - `phi:0:2` : Membatasi angka di belakang koma.
 - `trunc(4.5 * 2)` : `trunc` untuk mengubah nilai menjadi bilangan **integer** karena operator `mod` hanya berlaku dengan bilangan integer.’
 - `div` : Total hasil pembagian & `mod` : Modulus sisa bagi
-- Tingkat priortas operator
-    
-    
+- **Tingkat priortas operator**
     | **Operator** | **Prioritas** |
     | --- | --- |
     | not | 1 |
