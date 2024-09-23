@@ -33,7 +33,7 @@ Di Proxmox VE, QEMU Guest Agent menyediakan fitur-fitur berikut:
 
 ### 1. Enable Qemu-Guest-Agent on VM Proxmox
    
-    ![qemu-agent.png](./images/qemu-agent.png)
+![qemu-agent.png](./images/qemu-agent.png)
     
 
 ### 2. Install Package on linux VM
@@ -50,5 +50,5 @@ Di Proxmox VE, QEMU Guest Agent menyediakan fitur-fitur berikut:
 ```
 
 ### 3. Show after install
-    Jika sudah selesai maka pada dashboard VM-Proxmox akan terlihat ip yang digunakan
-    ![qemu-agent1.png](./images/qemu-agent1.png)
+Jika sudah selesai maka pada dashboard VM-Proxmox akan terlihat ip yang digunakan
+![qemu-agent1.png](./images/qemu-agent1.png)
