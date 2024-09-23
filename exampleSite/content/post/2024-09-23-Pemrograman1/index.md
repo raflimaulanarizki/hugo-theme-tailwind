@@ -11,6 +11,7 @@ tags : [
 categories : [
     "Pemrograman",
 ]
+asciinema: true
 ---
 
 Kenapa membuat jurnal pascal ini karena sebagai note pribadi pada waktu pertama kuliah, kadang-kadang suka lupa jadinya di taro aja di jurnal ini, tengcu….
@@ -74,6 +75,9 @@ end.
 - `readln` : Untuk membaca baris inputan `read(nama);` misal “Masukan Nama : ”, maka nama yg sudah di masukan tidak akan terbaca. Tanpa `readln` Program akan **tetap berjalan** jika nilai tersebut sudah ada sebelumnya.
 - Comment Pascal, `// {} {**}`
 
+**Run Program**
+{{< asciinema_local "./images/Pertemuan1.cast" >}}
+
 ## Pertemuan#2
 
 ```sh {linenos=true}
@@ -109,7 +113,7 @@ begin
   writeln;
 
   writeLn('1) 10 div 5 * 4 + 4 - 3 = ', 10 div 5 * 4 + 4 - 3);
-  writeLn('2) 5 * 10 / 2 - 13 + 7 = ', 5 * 10 / 2 - 13 + 7);
+  writeLn('2) 5 * 10 / 2 - 13 + 7 = ', (5 * 10 / 2 - 13 + 7):0:2);
   writeLn('3) ( 10 mod 3 ) + ( 5 * 3 +3 ) = ', (10 mod 3) + (5 * 3 + 3 ) );
   writeLn('4) 4.5 * 2 mod 2 = ', trunc(4.5 * 2) mod 2);
   writeLn('5) 3 + 5 * 3 < 10 = ', 3 + 5 * 3 < 10);
@@ -133,3 +137,6 @@ end.
     | * . / . div , mod , and | 2 |
     | + , - , or | 3 |
     | = , <> , < , ≤ , ≥ , > | 4 |
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan2.cast" >}}
