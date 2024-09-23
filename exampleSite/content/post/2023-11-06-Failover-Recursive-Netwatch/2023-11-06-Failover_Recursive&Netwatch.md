@@ -1,11 +1,10 @@
 ---
-author: Muhamad Rafli Maulana Rizki
-title: Failover Recursive & Netwatch - Mikrotik
+author: "Muhamad Rafli Maulana Rizki"
+title: "Failover Recursive & Netwatch - Mikrotik"
 date: 2023-11-06
 pin: 
 image: "./images/topo.png"
 description: "Failover adalah fitur yang digunakan untuk menjaga konektivitas network tetap stabil, jika terjadinya gangguan/down pada link Primary maka Failover ini akan memindahkan Traffic ke link Backup"
-math: true
 tags : [
     "Mikrotik",
     "Network",
