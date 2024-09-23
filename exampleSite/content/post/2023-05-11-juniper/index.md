@@ -135,18 +135,18 @@ versi 18.3R14
    biasanya naming ini di configurasi untuk perangkat yang modular dan server besar  
 
 ## Basic Configuration 
-   ### Configure root password
-      ```sh
-      #Masukan password dengan kombinasi hurup dan angka
-         root@juniper# set system root-authentication plain-text-password
-      ```
+   ### • Configure root password
+   ```sh
+   #Masukan password dengan kombinasi hurup dan angka
+      root@juniper# set system root-authentication plain-text-password
+   ```
      
-   ### Set Hostname
-      ```sh
-      root@juniper# set system host-name olive
-      ```
+   ### • Set Hostname
+   ```sh
+   root@juniper# set system host-name olive
+   ```
 
-   ### Set Time Parameters (Timezone, NTP, Current time)  
+   ### • Set Time Parameters (Timezone, NTP, Current time)  
    - Timezone 
       ```sh
       root@juniper# set system time-zone Asia/Jakarta
@@ -172,14 +172,13 @@ versi 18.3R14
       root@juniper> show system uptime
       ```
          
-   ### Set Users
-   
-      ```sh
-      root@juniper# set system login user admin class super-user 
-      root@juniper# set system login user admin authentication plain-text-password
-      ```
+   ### • Set Users
+   ```sh
+   root@juniper# set system login user admin class super-user 
+   root@juniper# set system login user admin authentication plain-text-password
+   ```
 
-   ### Set Ip address
+   ### • Set Ip address
 
    ```sh
    root@juniper# set interfaces em0.0 family inet address 192.168.1.100/24
@@ -191,7 +190,7 @@ versi 18.3R14
    - unit 0 : sub interface, default vlan 1 yaitu 0. 
    - family inet : kita akan mengkonfigurasi ip address ipv4 (inet)
 
-   ### Set Management Access (web, ssh, telnet, ftp) 
+   ### • Set Management Access (web, ssh, telnet, ftp) 
    setelah bisa terkoneksi ke switch melalui ip
    - Enable Service
 
