@@ -15,6 +15,8 @@ categories : [
 ]
 ---
 
+![Topologi](./images/mikrotik-openvpn.png "Topologi")
+
 Ada salah satu perusahan, yang mana perusahaan ini memberlakukan pekerjaan untuk karyawannya secara hybrid WFO dan WFA. Setelah itu, perusahaan ini juga memiliki sebuah aplikasi private yang hanya bisa di buka menggunakan network kantor.
 
 Masalah ini muncul pada saat karyawan sedang bekerjaa WFA/WFH, dikarenkan aplikasi pada perusahaan tersebut hanya bisa di buka menggunakan network kantor saja. lalu bagaimana caranya agar hp/laptop di rumah bisa terkoneksi dengan network yang ada pada kantor, yakni menggunakan <b>VPN</b>.
@@ -134,5 +136,8 @@ redirect-gateway def1
 * Pastikan sudah menginstall OpenVPN pada Laptop/HP
 * Import file client.ovpn kedalam aplikai OpenVPN
 * lalu isi username, password, dan private key. setelah di isi silahkan di connect ke vpnnya
-<br><br>
-![OpenVPN Client](./images/mikrotik-openvpn1.png "OpenVPN Client")
+
+
+<p align="center" width="100%">
+    <img src="./images/logo.png">
+</p>

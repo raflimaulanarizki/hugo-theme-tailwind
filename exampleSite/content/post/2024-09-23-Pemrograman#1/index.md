@@ -3,7 +3,7 @@ author: "Rafli Maulana Rizki"
 title: "Pemrograman#1 - Pascal"
 date: "2024-09-23"
 pin: 
-image: "/images/pascal_icon.png"
+image: "./images/pascal_icon.png"
 description: "Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis."
 tags : [
     "Pascal",
@@ -49,7 +49,7 @@ fpc test.pas
 
 ## Pertemuan#1
 
-```pascal {linenos=true}
+```sh {linenos=true}
 //Deklasi Program, termasuk deklasi variable
 program Pertemuan1;
 
@@ -75,7 +75,7 @@ end.
 
 ## Pertemuan#2
 
-```h {linenos=true}
+```sh {linenos=true}
 //Deklasi Program
 program Pertemuan2;
 uses crt;
