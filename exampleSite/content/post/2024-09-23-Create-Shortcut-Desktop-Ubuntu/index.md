@@ -31,9 +31,9 @@ nano winbox.desktop
 ```bash
 [Desktop Entry]
 Name=Winbox 
-Exec=env WINEPREFIX="/home/rafli/.wine" wine /usr/bin/winbox.exe
+Exec=env WINEPREFIX="/home/user/.wine" wine /usr/bin/winbox.exe
 Type=Application
-Icon=/home/rafli/winbox.png
+Icon=/home/user/winbox.png
 StartupNotify=true
 
 #Arahkan "Exec" ke folder wine dan jalankan command wine ke aplikasi yang ingin di jalankan.
