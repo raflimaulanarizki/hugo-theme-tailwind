@@ -3,7 +3,7 @@ author: Muhamad Rafli Maulana Rizki
 title: Manually and Automatically Backup - Juniper
 date: 2023-10-30
 pin: 
-image: /images/Juniper-Automatic_Backup.jpeg
+image: ./images/Juniper-Automatic_Backup.jpeg
 description: "Konfigurasi Backup Otomatis Juniper dan Manual menggunakan FTP server"
 math: true
 tags : [
@@ -40,10 +40,7 @@ user@host> file copy SW.JUNOS.13okt ftp://admin@172.16.10.10/switch/
 
 ## 2. Automatic Backup
 
-## Event-Options
-Create Scheduler (Action), Action (Policy) and Destination.
-
-##### <b>Generate Event</b> (Schedule) [link](https://www.juniper.net/documentation/us/en/software/junos/automation-scripting/topics/ref/statement/generate-event-edit-event-options.html)
+### <b>Generate Event</b> (Schedule) [link](https://www.juniper.net/documentation/us/en/software/junos/automation-scripting/topics/ref/statement/generate-event-edit-event-options.html)
 
 ```sh
 user@host# set event-options generate-event Backup-Daily_event time-of-day "00:00:05 +0700"
