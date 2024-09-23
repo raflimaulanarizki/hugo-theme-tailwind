@@ -38,3 +38,7 @@ StartupNotify=true
 
 #Arahkan "Exec" ke folder wine dan jalankan command wine ke aplikasi yang ingin di jalankan.
 ```
+
+3. Check Search apps ubuntu 
+
+    ![search-winbox](./images/image1.png)
