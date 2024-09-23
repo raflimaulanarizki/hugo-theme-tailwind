@@ -50,19 +50,17 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
     ```
     
 4. Setting Mangle
-    1. Rule (Accept) koneksi antar local network
+    - Rule (Accept) koneksi antar local network
 
-    ⇒ Berfungsi agar network yang ingin berkomunikasi antar network local **tidak melalui proses filter koneksi PCC**. 
-    Jika tidak dibuatkan rule accept, maka **semua network** akan **melalui proses PCC** terlebih dahulu, itu **dapat mempengaruhi traffic** local.
+        ⇒ Berfungsi agar network yang ingin berkomunikasi antar network local **tidak melalui proses filter koneksi PCC**. Jika tidak dibuatkan rule accept, maka **semua network** akan **melalui proses PCC** terlebih dahulu, itu **dapat mempengaruhi traffic** local.
         
         ```bash
         /ip firewall mangle
         add action=accept chain=prerouting dst-address-list=LAN
         ```
         
-    2. Rule Traffic Input Output
-
-    ⇒ Berfungsi untuk memastikan traffic masuk maupun keluar berada pada jalur/route yang sama.
+    - Rule Traffic Input Output
+        ⇒ Berfungsi untuk memastikan traffic masuk maupun keluar berada pada jalur/route yang sama.
         
         ```bash
         /ip firewall mangle
@@ -83,7 +81,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
         
     3. Rule Load Balance 2 ISP, Bandwidth sama
 
-    ⇒ Berfungsi untuk **membagi atau menyeimbangkan** traffic, kedua ISP akan bekerja secara bersamaan dan membagi tugas. Load Balance juga meminimalisir akan terjadinya **Overload traffic** pada salah satu ISP. 
+        ⇒ Berfungsi untuk **membagi atau menyeimbangkan** traffic, kedua ISP akan bekerja secara bersamaan dan membagi tugas. Load Balance juga meminimalisir akan terjadinya **Overload traffic** pada salah satu ISP. 
         
         ```bash
         /ip firewall mangle
@@ -138,6 +136,6 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
     
 6. Configuration Complete,
 
-⇒ Untuk melihat berhasil atau tidak, bisa dilihat dari rule mangel apakah **Packet dan Bytes** bertambah dan lihat traffic pada kedua ISP di bagi dua atau tidak pada saat **SPEEDTEST.**
+    ⇒ Untuk melihat berhasil atau tidak, bisa dilihat dari rule mangel apakah **Packet dan Bytes** bertambah dan lihat traffic pada kedua ISP di bagi dua atau tidak pada saat **SPEEDTEST.**
 
 ## Thank You
