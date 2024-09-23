@@ -19,7 +19,7 @@ categories : [
 
 Ada salah satu perusahan, yang mana perusahaan ini memberlakukan pekerjaan untuk karyawannya secara hybrid WFO dan WFA. Setelah itu, perusahaan ini juga memiliki sebuah aplikasi private yang hanya bisa di buka menggunakan network kantor.
 
-Masalah ini muncul pada saat karyawan sedang bekerjaa WFA/WFH, dikarenkan aplikasi pada perusahaan tersebut hanya bisa di buka menggunakan network kantor saja. lalu bagaimana caranya agar hp/laptop di rumah bisa terkoneksi dengan network yang ada pada kantor, yakni menggunakan <b>VPN</b>.
+Masalah ini muncul pada saat karyawan sedang bekerjaa WFA/WFH, dikarenkan aplikasi pada perusahaan tersebut hanya bisa di buka menggunakan network kantor saja. lalu bagaimana caranya agar hp/laptop di rumah bisa terkoneksi dengan network yang ada pada kantor, yakni menggunakan **VPN**.
 
 VPN ini bermacam-macam protokolnya, mulai dari PPTP, L2TP, SSTP, OpenVPN. Tetapi pada lab kali ini protokol yang akan dipakai yakni, `OpenVPN`.
 
@@ -36,6 +36,7 @@ Note : Pastikan Mikrotik sudah di setting basic configuration dan sudah dipasang
 
 ## Certificate
 * Certificate Generate
+
 ⇒ Membuat certificate template yang berisikan informasi kadaluarsa certificatenya, informasi alamat, dan encryption algorithm. Kenapa disebut template karena pada saat sudah di Sign (tanda tangan) maka informasi atau lainnya tidak dapat di ubah. 
 ```sh
 /certificate
@@ -44,7 +45,8 @@ add name=server-template common-name=server days-valid=3650 key-size=2048 key-us
 add name=client-template common-name=client days-valid=3650 key-size=2048 key-usage=tls-client
 ```
 
-* Certificate Sign <br>
+* Certificate Sign 
+
 ⇒ Berfungsi untuk memastikan bahwa certificate ini dikeluarkan atau di tanda tangani (sign) dengan sah oleh sumber yang terpercaya. Sign ini betul certificate tersebut di keluarkan oleh sumbernya, tetapi belum sah untuk sistemnya. 
 ```sh
 /certificate
@@ -53,7 +55,8 @@ sign server-template name=server-certificate ca=ca-certificate
 sign client-template name=client-certificate ca=ca-certificate
 ```
 
-* Certificate Trust <br>
+* Certificate Trust 
+
 ⇒ Proses kepercayaan (trust) certificate untuk memastikan bahwa sistem akan menerima certificate sebagai certificate sah. 
 ```sh
 /certificate
