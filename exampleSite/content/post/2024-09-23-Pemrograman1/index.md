@@ -12,10 +12,10 @@ categories : [
     "Pemrograman",
 ]
 ---
+
 Kenapa membuat jurnal pascal ini karena sebagai note pribadi pada waktu pertama kuliah, kadang-kadang suka lupa jadinya di taro aja di jurnal ini, tengcu….
 
-
-
+![alt text](image.png)
 ![pascal](./images/pascal_icon.jpg "pascal")
 
 ⇒ Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis.
