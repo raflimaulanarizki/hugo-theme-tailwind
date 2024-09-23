@@ -12,6 +12,7 @@ tags : [
 categories : [
     "System",
 ]
+toc: false
 ---
 
 Menjalankan aplikasi menggunakan icon desktop yang di dalamnya menjalankan aplikasi wine, cocok dengan aplikasi custom yang tidak tersedia pada ubuntu store/ flahub.
