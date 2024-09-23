@@ -104,16 +104,14 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
         - Tanda “Mark Connection” akan di jadikan “Mark Routing” untuk di buatkan route khusus untuk Load Balance
         
         Note :
-        
-        - Konfigurasi PCC
-            
+        - Konfigurasi PCC 
             Tiknik PCC ini menggunakan algoritma Connection splitting untuk melakukan load balance.
             
             ![pcc.png](./images/pcc.png)
             
             - Divisor (pembagi) : nilai yang menentukan berapa banyak jalur untuk membagi traffic. Contoh: jika ada 2 ISP (bandwidh sama) maka Divisor 2.
             - Remainder (Sisa) : hasil operasi pembagian traffic (Sequence number), jika Divisor nya 2, maka akan mendapatkan Sisa 0 dan 1.
-        - PCC dengan **Bandwidth Berbeda**
+        - **PCC dengan Bandwidth Berbeda**
             
             ![topo2](./images/topo2.png)
             

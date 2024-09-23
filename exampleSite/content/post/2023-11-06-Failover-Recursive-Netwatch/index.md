@@ -88,21 +88,24 @@ Setting network dari topologi diatas.
     ![routenetwatch.png](./images/routenetwatch.png)
     
 3. Set Configure Netwatch
-    
-    <img src="./images/netwatch1.png" alt="netwatch1" style="width: 60%;">
+    <img src="./images/netwatch1.png" alt="netwatch1" style="width: 40%;">
     
     Hosts : IP Internet yang di monitoring
+
     Interval : Berapa lama untuk menentukan down atau tidaknya, set ke 5 sektiar (3-5 detik)
+    
     Timeout : Timeout Hosts. 
 
-    <img src="./images/netwatch2.png" alt="netwatch2" style="width: 60%;">
+    <img src="./images/netwatch2.png" alt="netwatch2" style="width: 40%;">
 
     ⇒ Set disable route dengan comment “Utama”
+
     Otomatis Route backup akan menerusakan traffic internet jika status DOWN.
     
-    <img src="./images/netwatch3.png" alt="netwatch3" style="width: 60%;">
+    <img src="./images/netwatch3.png" alt="netwatch3" style="width: 40%;">
 
     ⇒ Set enable route dengan comment “Utama”
+
     Route Utama akan kembali menerusakan traffic internet jika status UP.
     
 
