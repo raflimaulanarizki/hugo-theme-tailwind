@@ -138,6 +138,6 @@ redirect-gateway def1
 * lalu isi username, password, dan private key. setelah di isi silahkan di connect ke vpnnya
 
 
-<p align="center" width="100%">
+<p align="center" width="50%">
     <img src="./images/mikrotik-openvpn1.png">
 </p>
