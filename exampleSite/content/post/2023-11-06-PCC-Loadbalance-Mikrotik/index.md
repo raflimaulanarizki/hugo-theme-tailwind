@@ -60,6 +60,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
         ```
         
     - Rule Traffic Input Output
+        
         ⇒ Berfungsi untuk memastikan traffic masuk maupun keluar berada pada jalur/route yang sama.
         
         ```bash
@@ -79,7 +80,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
         
         Note: Jika **“in-interface”** adalah PPPoE maka select **PPPoE client Interface** tidak Port Mikrotiknya
         
-    3. Rule Load Balance 2 ISP, Bandwidth sama
+    - Rule Load Balance 2 ISP, Bandwidth sama
 
         ⇒ Berfungsi untuk **membagi atau menyeimbangkan** traffic, kedua ISP akan bekerja secara bersamaan dan membagi tugas. Load Balance juga meminimalisir akan terjadinya **Overload traffic** pada salah satu ISP. 
         
@@ -119,7 +120,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
             Jika bandwidth berbeda, maka Bandwidth yang lebih besar harus di bagi untuk menyamakan rule dengan bandwidth yang kecil.
             
         
-    4. Configuration Firewall Mangel
+    - Configuration Firewall Mangel
         ![confpcc.png](./images/confpcc.png)
         
 5. Create IP Route Network

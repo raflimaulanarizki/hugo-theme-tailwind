@@ -57,6 +57,7 @@ Setting network dari topologi diatas.
             ![recursive.png](./images/recursive.png)
             
         - Gateway diisikan dengan ip route yang sudah di buat sebelumnya.
+        
     - Cara kerja :
         - Route cek internet akan mengecek dst.address misal 8.8.8.8 dengan ping “check-gateway” terus menerus.
         - pada saat pengecekan terjadi down maka otomatis Rule 0.0.0.0/0 gateway 8.8.8.8 akan nonaktif dan berpindah ke backup route.
