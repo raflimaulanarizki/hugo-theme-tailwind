@@ -100,19 +100,19 @@ begin
 	writeln ('phi : ', phi:0:2);
 	writeln ('Jari-Jari (r) : ', r);
 
-  WriteLn('Berapa luas lingkaran : ', luas:0:2);
-  WriteLn('Berapa luas lingkaran : ', luas);
-  
+  writeLn('Berapa luas lingkaran : ', luas:0:2);
+  writeLn('Berapa luas lingkaran : ', luas);
+
 
 	writeln;
 	writeln ('Tugas Pertemuan#2');
 	writeln;
 
-  WriteLn('1) 10 div 5 * 4 + 4 - 3 = ', 10 div 5 * 4 + 4 - 3);
-  WriteLn('2) 5 * 10 / 2 - 13 + 7 = ', 5 * 10 / 2 - 13 + 7);
-  WriteLn('3) ( 10 mod 3 ) + ( 5 * 3 +3 ) = ', (10 mod 3) + (5 * 3 + 3 ) );
-  WriteLn('4) 4.5 * 2 mod 2 = ', trunc(4.5 * 2) mod 2);
-  WriteLn('5) 3 + 5 * 3 < 10 = ', 3 + 5 * 3 < 10);
+  writeLn('1) 10 div 5 * 4 + 4 - 3 = ', 10 div 5 * 4 + 4 - 3);
+  writeLn('2) 5 * 10 / 2 - 13 + 7 = ', 5 * 10 / 2 - 13 + 7);
+  writeLn('3) ( 10 mod 3 ) + ( 5 * 3 +3 ) = ', (10 mod 3) + (5 * 3 + 3 ) );
+  writeLn('4) 4.5 * 2 mod 2 = ', trunc(4.5 * 2) mod 2);
+  writeLn('5) 3 + 5 * 3 < 10 = ', 3 + 5 * 3 < 10);
 
   ReadLn;
 end.
