@@ -12,6 +12,8 @@ tags : [
 ]
 ---
 
+![Topologi](./images/topo1.png "Topologi")
+
 Load Balance adalah metode untuk membagi traffic ke 2 jalur atau lebih. pembagian traffic ini dilakukan secara balance agar traffic berjalan optimal dan bandwidth dari ISP bisa dimaksimalkan.
 
 Load Balance ini juga dapat **menghindari Overload** pada salah satu jalur dan dapat menjadi **backup** jika ada Jalur down/bermasalah.
@@ -38,7 +40,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
     add action=masquerade chain=srcnat comment="to;ISP-2" out-interface=ether2-ISP2
     ```
     
-3. Create address list  (LAN) Network Local <br>
+3. Create address list  (LAN) Network Local
     ⇒ list network local yang akan di load balance.
     
     ```bash
@@ -48,7 +50,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
     ```
     
 4. Setting Mangle
-    1. Rule (Accept) koneksi antar local network <br>
+    1. Rule (Accept) koneksi antar local network
     ⇒ Berfungsi agar network yang ingin berkomunikasi antar network local **tidak melalui proses filter koneksi PCC**. 
     Jika tidak dibuatkan rule accept, maka **semua network** akan **melalui proses PCC** terlebih dahulu, itu **dapat mempengaruhi traffic** local.
         
@@ -57,7 +59,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
         add action=accept chain=prerouting dst-address-list=LAN
         ```
         
-    2. Rule Traffic Input Output <br>
+    2. Rule Traffic Input Output
     ⇒ Berfungsi untuk memastikan traffic masuk maupun keluar berada pada jalur/route yang sama.
         
         ```bash
@@ -77,7 +79,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
         
         Note: Jika **“in-interface”** adalah PPPoE maka select **PPPoE client Interface** tidak Port Mikrotiknya
         
-    3. Rule Load Balance 2 ISP, Bandwidth sama <br>
+    3. Rule Load Balance 2 ISP, Bandwidth sama
     ⇒ Berfungsi untuk **membagi atau menyeimbangkan** traffic, kedua ISP akan bekerja secara bersamaan dan membagi tugas. Load Balance juga meminimalisir akan terjadinya **Overload traffic** pada salah satu ISP. 
         
         ```bash
@@ -121,7 +123,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
     4. Configuration Firewall Mangel
         ![confpcc.png](./images/confpcc.png)
         
-5. Create IP Route Network <br>
+5. Create IP Route Network
     ⇒ Berfungsi untuk merutekan Rule yang telah di buat dengan set “Routing-mark” pada routing table tersebut.
     
     ```bash
@@ -132,7 +134,7 @@ Berikan konfigurasi dari topologi di atas menggunakan Load Balance PCC dan backu
     add distance=2 gateway=172.16.2.1
     ```
     
-6. Configuration Complete, <br>
+6. Configuration Complete,
 ⇒ Untuk melihat berhasil atau tidak, bisa dilihat dari rule mangel apakah **Packet dan Bytes** bertambah dan lihat traffic pada kedua ISP di bagi dua atau tidak pada saat **SPEEDTEST.**
 
 ## Thank You

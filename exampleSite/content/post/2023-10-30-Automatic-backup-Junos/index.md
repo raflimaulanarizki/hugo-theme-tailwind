@@ -12,6 +12,8 @@ tags : [
 ]
 ---
 
+![Topologi](./images/Juniper-Automatic_Backup.jpeg "Topologi")
+
 Konfigurasi Backup Otomatis Juniper dan Manual menggunakan FTP server. 
 
 ## Set Clock

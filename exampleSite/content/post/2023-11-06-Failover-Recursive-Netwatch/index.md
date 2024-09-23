@@ -11,6 +11,8 @@ tags : [
 ]
 ---
 
+![Topologi](./images/topo.png "Topologi")
+
 Failover adalah fitur yang digunakan untuk menjaga konektivitas network tetap stabil, jika terjadinya gangguan/down pada link Primary maka Failover ini akan memindahkan Traffic ke link Backup.
 
 Masalah Failover
@@ -89,18 +91,18 @@ Setting network dari topologi diatas.
     
     <img src="./images/netwatch1.png" alt="netwatch1" style="width: 60%;">
     
-    Hosts : IP Internet yang di monitoring <br>
-    Interval : Berapa lama untuk menentukan down atau tidaknya, set ke 5 sektiar (3-5 detik) <br>
+    Hosts : IP Internet yang di monitoring
+    Interval : Berapa lama untuk menentukan down atau tidaknya, set ke 5 sektiar (3-5 detik)
     Timeout : Timeout Hosts. 
 
     <img src="./images/netwatch2.png" alt="netwatch2" style="width: 60%;">
 
-    ⇒ Set disable route dengan comment “Utama” <br>
+    ⇒ Set disable route dengan comment “Utama”
     Otomatis Route backup akan menerusakan traffic internet jika status DOWN.
     
     <img src="./images/netwatch3.png" alt="netwatch3" style="width: 60%;">
 
-    ⇒ Set enable route dengan comment “Utama” <br>
+    ⇒ Set enable route dengan comment “Utama”
     Route Utama akan kembali menerusakan traffic internet jika status UP.
     
 
