@@ -1,5 +1,5 @@
 ---
-author: "Rafli Maulana Rizki"
+author: "Muhamad Rafli Maulana Rizki"
 title: "Pemrograman#1 - Pascal"
 date: "2024-09-23"
 pin: 
