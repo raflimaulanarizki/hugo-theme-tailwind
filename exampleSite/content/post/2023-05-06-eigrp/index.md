@@ -80,7 +80,7 @@ Apa saja kriteria agar bisa saling terkoneksi dan bertukar informasi menggunakan
 
 DUAL juga mengatasi masalah looping dan mengoptimalkan rute dalam jaringan yang kompleks dengan banyak jalur alternatif. Dengan menggunakan DUAL, EIGRP dapat memberikan performa routing yang baik, konvergensi yang cepat saat terjadi perubahan topologi, dan mengoptimalkan penggunaan bandwidth jaringan.
 
-#### RTP (Reliable Transport Protocol)
+### RTP (Reliable Transport Protocol)
 
 RTP adalah protokol transport yang digunakan oleh EIGRP untuk mengirim dan menerima packet-packet update routing maupun query/response. RTP ini adalah pengganti dari TCP, yang mana RTP ini lebih powerfull di banding TCP, di karenakan RTP lebih cepat dan lebih efisien daripada algoritma yang digunakan oleh TCP.
 

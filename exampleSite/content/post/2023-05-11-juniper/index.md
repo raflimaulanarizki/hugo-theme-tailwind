@@ -54,19 +54,19 @@ versi 18.3R14
    ```
 
 ## Mode Configuration Juniper
-   ### Mode UNIX Shell
+   ### • Mode UNIX Shell
    ```sh
    root@% 
    root@% cli
    ```
 
-   ### Mode Operational/User
+   ### • Mode Operational/User
    ```sh
    {master:0}
    root@juniper>  
    ```
 
-   ### Mode configuration
+   ### • Mode configuration
    ```sh
    root@juniper> configure #(mode Configuration)
    root@juniper> edit 
@@ -87,14 +87,14 @@ versi 18.3R14
    - Ctrl + U : Menghapus semua karakter 
 
 ## Show Configuration
-   ### Active Configuration
+   ### • Active Configuration
    Konfigurasi yang berjalan
    ```sh
    root@juniper> show configuration 
    root@juniper# run show configuration
    ```
 
-   ### Candidate Configuration
+   ### • Candidate Configuration
    Konfigurasi yang baru di setting tetapi belum di active configuration
    ```sh
    {master:0}[edit]
