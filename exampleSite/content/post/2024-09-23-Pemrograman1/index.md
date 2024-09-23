@@ -59,8 +59,8 @@ uses crt;
 
 {*Tubuh (main) Program*}
 begin
-	write('Hello ');
-	Writeln('World');
+  write('Hello ');
+  Writeln('World');
   WriteLn('Masuk pak eko');
  
   ReadLn;
@@ -93,20 +93,20 @@ begin
 	r := 7;
 	luas:= phi * r * r;
 	
-	writeln;
-	writeln ('Mencari Luas Lingkaran');
-	writeln;
+  writeln;
+  writeln ('Mencari Luas Lingkaran');
+  writeln;
 
-	writeln ('phi : ', phi:0:2);
-	writeln ('Jari-Jari (r) : ', r);
+  writeln ('phi : ', phi:0:2);
+  writeln ('Jari-Jari (r) : ', r);
 
   writeLn('Berapa luas lingkaran : ', luas:0:2);
   writeLn('Berapa luas lingkaran : ', luas);
 
 
-	writeln;
-	writeln ('Tugas Pertemuan#2');
-	writeln;
+  writeln;
+  writeln ('Tugas Pertemuan#2');
+  writeln;
 
   writeLn('1) 10 div 5 * 4 + 4 - 3 = ', 10 div 5 * 4 + 4 - 3);
   writeLn('2) 5 * 10 / 2 - 13 + 7 = ', 5 * 10 / 2 - 13 + 7);
@@ -116,7 +116,6 @@ begin
 
   ReadLn;
 end.
-
 ```
 
 - Untuk Variable & Constanta di deklarasikan pada awal program
