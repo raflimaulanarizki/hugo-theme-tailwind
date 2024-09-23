@@ -5,7 +5,6 @@ date: "2024-09-23"
 pin: 
 image: "/images/pascal_icon.png"
 description: "Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis."
-math: true
 tags : [
     "Pascal",
 ]
@@ -13,19 +12,13 @@ categories : [
     "Pemrograman",
 ]
 ---
-# 
-
-Owner: Muhamad Rafli Maulana Rizki
-Tags: System
-Created time: September 23, 2024 12:28 AM
-
 Kenapa membuat jurnal pascal ini karena sebagai note pribadi pada waktu pertama kuliah, kadang-kadang suka lupa jadinya di taro aja di jurnal ini, tengcu….
 
 ⇒ Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis.
 
 Untuk menjalankan pascal memerlukan sebuah compiler agar dapat di mengerti komputer apa yang telah dibuat pada pemrograman tersebut, saat ini compiler yang masih sering di gunakan yaitu **Freepascal**
 
-### Install Freepascal on ubuntu
+## Install Freepascal on ubuntu
 
 Karena laptop saya ubuntu jdinya installny pke ubuntu aja ehehehe….
 
@@ -54,9 +47,9 @@ fpc test.pas
 ./test.pas
 ```
 
-### Pertemuan#1
+## Pertemuan#1
 
-```pascal
+```pascal {linenos=true}
 //Deklasi Program, termasuk deklasi variable
 program Pertemuan1;
 
@@ -80,9 +73,9 @@ end.
 - `readln` : Untuk membaca baris inputan `read(nama);` misal “Masukan Nama : ”, maka nama yg sudah di masukan tidak akan terbaca. Tanpa `readln` Program akan **tetap berjalan** jika nilai tersebut sudah ada sebelumnya.
 - Comment Pascal, `// {} {**}`
 
-### Pertemuan#2
+## Pertemuan#2
 
-```pascal
+```pascal {linenos=true}
 //Deklasi Program
 program Pertemuan2;
 uses crt;
@@ -134,7 +127,7 @@ end.
 - Tingkat priortas operator
     
     
-    | Operator | Prioritas |
+    | **Operator** | **Prioritas** |
     | --- | --- |
     | not | 1 |
     | * . / . div , mod , and | 2 |
