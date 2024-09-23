@@ -10,7 +10,7 @@ tags : [
     "Network",
 ]
 ---
-## SERIES JUNOS
+## Series Junos
 - JUNOS SWITCHING DEVICES
    - EX Series
    - QFX Series
@@ -29,7 +29,7 @@ tags : [
    - vSRX (Virtual Security Firewall)
    - vQFX (Virtual Switch)
 
-## DETAIL VERSION JUNOS
+## Version Junos
 versi 18.3R14
 
 => Versi 18.3, release R (perbaikan bug tanpa fitur baru), build ke 14
@@ -147,39 +147,40 @@ versi 18.3R14
       ```
 
    ### Set Time Parameters (Timezone, NTP, Current time)  
-      - Timezone 
-         ```sh
-         root@juniper# set system time-zone Asia/Jakarta
-         ```
+   - Timezone 
+      ```sh
+      root@juniper# set system time-zone Asia/Jakarta
+      ```
 
-      - NTP Server
+   - NTP Server
 
-         ```sh
-         root@juniper# set system ntp server id.pool.ntp
-         root@juniper# set system domain-name id.pool.ntp #(dns server)
-         root@juniper# set system domain-name 169.1.1.1 #(ip server)
-         root@juniper> set date ntp id.pool.ntp #(server ntp)
-         ```
+      ```sh
+      root@juniper# set system ntp server id.pool.ntp
+      root@juniper# set system domain-name id.pool.ntp #(dns server)
+      root@juniper# set system domain-name 169.1.1.1 #(ip server)
+      root@juniper> set date ntp id.pool.ntp #(server ntp)
+      ```
 
-      - Current time 
+   - Current time 
 
-         ```sh
-         root@juniper> set date 202012312400.01 #format:YYMMDDhhmm.ss
-         ```
+      ```sh
+      root@juniper> set date 202012312400.01 #format:YYMMDDhhmm.ss
+      ```
 
-      - Check Time
-
-         ```sh
-         root@juniper> show system uptime
-         ```
+   - Check Time
+      ```sh
+      root@juniper> show system uptime
+      ```
          
    ### Set Users
+   
       ```sh
       root@juniper# set system login user admin class super-user 
       root@juniper# set system login user admin authentication plain-text-password
       ```
 
    ### Set Ip address
+
    ```sh
    root@juniper# set interfaces em0.0 family inet address 192.168.1.100/24
    root@juniper# set interfaces em0 unit 0 family inet address 192.168.1.100/24
@@ -210,14 +211,14 @@ versi 18.3R14
 
 ## Management Access Parameters
    ### • Set logout
-      ```sh
-      root@juniper> set cli idle-timeout 10 (menit)
-      ```
+   ```sh
+   root@juniper> set cli idle-timeout 10 (menit)
+   ```
 
    ### • Login Banner
-      ```sh
-      root@juniper# set system login message "silahkan hubungi admin"
-      ```
+   ```sh
+   root@juniper# set system login message "silahkan hubungi admin"
+   ```
 
 
 ## Backup, Restore, Reset configuration
@@ -253,30 +254,30 @@ versi 18.3R14
 
 ## Troubleshooting
    ### • Ping 
-      ```sh
-      root@juniper> ping 1.1.1.1
-      root@juniper> ping 1.1.1.1 rapid #(ping ala cisco !!!!!)
-      root@juniper> ping 10.20.30.1 rapid interval 100 count 1000 
-      ```
+   ```sh
+   root@juniper> ping 1.1.1.1
+   root@juniper> ping 1.1.1.1 rapid #(ping ala cisco !!!!!)
+   root@juniper> ping 10.20.30.1 rapid interval 100 count 1000 
+   ```
    ### • Show Mac Address Table
-      ```sh
-      root@juniper> show ethernet-switching table vlan-id 20
-      root@juniper> show ethernet-switching table vlan-name management
-      root@juniper> show ethernet-switching table interface ge-0/0/1
-      ```
+   ```sh
+   root@juniper> show ethernet-switching table vlan-id 20
+   root@juniper> show ethernet-switching table vlan-name management
+   root@juniper> show ethernet-switching table interface ge-0/0/1
+   ```
 
    ### • Disable Enable Port
-      ```sh
-      #Disable
-      root@juniper# set interfaces ge-0/0/1.0 disable
-      root@juniper# commit
+   ```sh
+   #Disable
+   root@juniper# set interfaces ge-0/0/1.0 disable
+   root@juniper# commit
 
-      #Enable
-      root@juniper# delete interfaces ge-0/0/1.0 disable
-      root@juniper# commit
-      ``` 
+   #Enable
+   root@juniper# delete interfaces ge-0/0/1.0 disable
+   root@juniper# commit
+   ``` 
 
    ### • Log - Interface
-      ```sh
-      root@juniper> show log interface-logs
-      ```
+   ```sh
+   root@juniper> show log interface-logs
+   ```
