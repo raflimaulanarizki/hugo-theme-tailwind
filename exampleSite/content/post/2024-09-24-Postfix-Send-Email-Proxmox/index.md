@@ -29,7 +29,7 @@ Postfix berguna untuk send email ke mail server, contoh seperti mail company, gm
     
 - Setting App Password pada Google Account jika menggunakan **gmail** (Optional)
 
-[https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)
+    [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)
 
 - Set User & password email
     
