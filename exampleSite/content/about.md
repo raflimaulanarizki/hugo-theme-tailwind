@@ -25,7 +25,8 @@ Look at my <a href="https://cv.raflimaulanarizki.site" target="_blank"> cv </a>o
     <img src="https://img.shields.io/badge/-UBIQUITI-00c3ff?logo=ubiquiti&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ubiquiti" />
     <img src="https://img.shields.io/badge/-MIKROTIK-lightgrey?logo=mikrotik&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="mikrotik" />
     <img src="https://img.shields.io/badge/-RUIJIE-red?logo=ruijie&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ruijie" />
-    <img src="https://img.shields.io/badge/-PFsense-150A76?logo=pfsense&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="ruijie" />
+    <img src="https://img.shields.io/badge/-PFsense-150A76?logo=pfsense&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="pfsense" />
+    <img src="https://img.shields.io/badge/-dell-0075BA?logo=dell&logoColor=white&style=for-the-badge" style="margin: 0 1px" alt="dell" />
 </div>
 
 <h3>System</h3>
