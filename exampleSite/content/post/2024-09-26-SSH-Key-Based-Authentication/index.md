@@ -32,6 +32,7 @@ Public key authentication mengandalkan kriptografi kunci untuk mengizinkan user 
 ## Configuration
 
 1. **Creating SSH Key**
+
    Create Public key and private key pada **user remote dan user server**.
       
       ```bash
@@ -61,6 +62,7 @@ Public key authentication mengandalkan kriptografi kunci untuk mengizinkan user 
     
 
 2. **Copying your SSH Public Key to Server**
+
    Mengcopy public key user yang di pakai untuk ke Server remotenya. Public akan di copy ke user file  “.ssh/known_hosts”
 
    ```bash
@@ -92,19 +94,19 @@ Public key authentication mengandalkan kriptografi kunci untuk mengizinkan user 
     
     ```
     
-4. Disabling Password Authentication on your Server
+4. **Disabling Password Authentication on your Server**
     
-    Mematikan authentication password jadi untuk mengakses server menggunakan public key yang sebelumnya sudah dikonfigurasi.
+    Mematikan authentication password maka untuk mengakses server hanya menggunakan public key yang sebelumnya sudah dikonfigurasi.
     
     ```bash
-    nano /etc/ssh/sshd_config
-    "" #Rubah dan uncomment config pubkey auth to yes dan passwrd auth no
+    > nano /etc/ssh/sshd_config
+    .... #Rubah dan uncomment config pubkey auth to yes dan passwrd auth no
     PubkeyAuthentication yes
     
     PasswordAuthentication no
-    ""
+    ...
     
-    systemctl restart ssh
+    > systemctl restart ssh
     ```
     
-5. Done
+5. **Done**
