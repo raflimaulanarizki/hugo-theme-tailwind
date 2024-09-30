@@ -256,5 +256,5 @@ fpc test.pas
   end.
 
   ```
-    **Run Program**
+  **Run Program**
   {{< asciinema_local "./images/Pertemuan3.cast" >}}  
