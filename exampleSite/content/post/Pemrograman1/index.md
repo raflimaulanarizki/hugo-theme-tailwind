@@ -1,7 +1,7 @@
 ---
 author: "Muhamad Rafli Maulana Rizki"
 title: "Pemrograman#1 - Pascal"
-date: "2024-09-23"
+date: "2024-09-30"
 pin: 
 image: "./images/pascal_icon.jpg"
 description: "Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis."
@@ -201,8 +201,11 @@ fpc test.pas
   - `read` : input nilai tanpa enter setelahnya
   - `readln` : input nilai dengan enter setelahnya
 
+  **Run Program**
+  {{< asciinema_local "./images/Pertemuan3-1.cast" >}}  
+
   ```sh {linenos=true}
-  program Latihan Pertemuan3; 
+  program Latihan_Pertemuan3; 
   uses crt;
 
   var
@@ -253,3 +256,5 @@ fpc test.pas
   end.
 
   ```
+    **Run Program**
+  {{< asciinema_local "./images/Pertemuan3.cast" >}}  
