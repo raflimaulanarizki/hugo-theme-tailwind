@@ -74,15 +74,16 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
         fc00::/7 (11111100) <br>
         fc00::/8, fd00::/8, fe00::/8
 
-    Note: 
-    - Update **terbaru mengharuskan** **bit ke 8** di set ke 1, jadi **FD**
-    - **Global ID**, harus unik dan random agar tidak overlap saat perusahaan bergabung.
+        Note: 
+        - Update **terbaru mengharuskan** **bit ke 8** di set ke 1, jadi **FD**
+        - **Global ID**, harus unik dan random agar tidak overlap saat perusahaan bergabung.
         
         ![image5.png](./images/image5.png)
         
     - **Link Local Address** <br>
         ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface <br>
         address = fe80::/10
+        
         Note:
         - Standardnya 54bit setelah fe80/10 harus 0, jadi only FE8
         - Interface ID di **generete using EUI-64**
@@ -102,15 +103,15 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
     Address : ff00::/8 (General Multicast)
     
     **IPv6 Multicast Scopes**, => seberapa jauh packet mulitcast di forward.
-    - **Interface-local (FF01)**
+    - **Interface-local (FF01)**<br>
     ⇒ Packet **doesn’t leave dari local device**. hanya digunakan untuk traffic yang berjalan dalam local device.
-    - **Link-local (FF02)**
+    - **Link-local (FF02)**<br>
     ⇒ Packet **tetap dalam local subnet** dan tidak dirutekan antar subnet, can be used to send a message to hosts connected to the local link.
-    - **Site-local (FF05)**
+    - **Site-local (FF05)**<br>
     ⇒ packet **can be forwarded by routers**. tetapi data tersebut dilimit pada single pyhsical location (**not forwarded** melalui **WAN**)
-    - **Organization-local (FF08)**
+    - **Organization-local (FF08)**<br>
     ⇒ berfungsi agar **cakupannya (scope) lebih luas** dibandingkan multicast site-local (seluruh company/organization).
-    - **Global (FFOE)**
+    - **Global (FFOE)**<br>
     ⇒ Address ini **tidak ada batasan** dan **lebih luas dari organizaion-local** dan dapat **diroute melalui public internet**.
     
     ![image6.png](./images/image6.png)
