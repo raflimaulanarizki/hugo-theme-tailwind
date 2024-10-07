@@ -125,7 +125,7 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
         `ipv6 address 2001:db8:1:1::99/128 anycast`   
         ⇒ set ip address di multiple device
 
-## Mekanisme Delegasi IPv6
+## IPv6 Delegation Mechanism
 1. **Stateless Mechanism**  
     ⇒ Metode di mana device dalam jaringan dapat mengonfigurasi alamat IP mereka sendiri tanpa bantuan server DHCPv6. Proses ini disebut **SLAAC** (Stateless Address Autoconfiguration). Device menggunakan informasi yang dikirim oleh router melalui **Router Advertisement (RA)** untuk membentuk alamat IP.
     
