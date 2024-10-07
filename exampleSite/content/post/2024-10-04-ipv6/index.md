@@ -98,11 +98,9 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
                 - Konfigurasi link-local satu interface satu address
             - Configure
                 - `ipv6 enable`
-
-                ⇒ enable ipv6 on interface
+                    ⇒ enable ipv6 on interface
                 - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801`
-                
-                ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
+                    ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
 2. **Multicast Address (one-to-many)**
     Address : ff00::/8 (General Multicast)
     
