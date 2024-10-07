@@ -99,7 +99,7 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
                     ⇒ enable ipv6 on interface <br>
                 - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801` <br>
                     ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
-2. **Multicast Address (one-to-many)**
+2. **Multicast Address (one-to-many)**<br>
     Address : ff00::/8 (General Multicast)
     
     **IPv6 Multicast Scopes**, => seberapa jauh packet mulitcast di forward.
@@ -116,25 +116,26 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
     
     ![image6.png](./images/image6.png)
     
-3. **Anycast Address (one-to-one-of-many)**
-    ⇒ Menetapkan **ipv6 yang sama** **di multiple device (router)** yang berbeda tetapi tidak bentrok, melainkan akan **di arahkan ke perangkat terdekat.** <br>
-    **No Specific Address** range for anycast addresses.
-        - Cara Kerja
-            - Add ip anycast ke multiple device (router)
-            - Host route akan meng advertise addressnya ke router lain.
-            - ketika host send packet to destination address, router akan forward ke router terdekat yang dikonfigurasi dengan ip address yang sama (sama routeing metric)
-        - Function
-            - Ditugaskan ke lebih dari satu interface
-            - Digunakan secara eksklusif oleh perangkat non-host, biasanya server
-        - Configuration <br>
-            `ipv6 address 2001:db8:1:1::99/128 anycast` <br>
-            ⇒ set ip address di multiple device
+3. **Anycast Address (one-to-one-of-many)**<br>
+    ⇒ Menetapkan **ipv6 yang sama** **di multiple device (router)** yang berbeda tetapi tidak bentrok, melainkan akan **di arahkan ke perangkat terdekat.**
+
+    **No Specific Address** range for anycast addresses.<br>
+    - Cara Kerja
+        - Add ip anycast ke multiple device (router)
+        - Host route akan meng advertise addressnya ke router lain.
+        - ketika host send packet to destination address, router akan forward ke router terdekat yang dikonfigurasi dengan ip address yang sama (sama routeing metric)
+    - Function
+        - Ditugaskan ke lebih dari satu interface
+        - Digunakan secara eksklusif oleh perangkat non-host, biasanya server
+    - Configuration <br>
+        `ipv6 address 2001:db8:1:1::99/128 anycast` <br>
+        ⇒ set ip address di multiple device
 
 ## Mekanisme Delegasi IPv6
-1. **Stateless Mechanism**
+1. **Stateless Mechanism**<br>
     ⇒ Metode di mana device dalam jaringan dapat mengonfigurasi alamat IP mereka sendiri tanpa bantuan server DHCPv6. Proses ini disebut **SLAAC** (Stateless Address Autoconfiguration). Device menggunakan informasi yang dikirim oleh router melalui **Router Advertisement (RA)** untuk membentuk alamat IP.
     
-2. **Stateful Mechanism**
+2. **Stateful Mechanism**<br>
     ⇒ Stateful Mechanism menggunakan **DHCPv6** (Dynamic Host Configuration Protocol for IPv6) dan **DHCPV6 Client** untuk konfigurasi IP dan informasi network lainnya. Dalam mekanisme ini, DHCPv6 server menyediakan alamat IP secara dinamis, Mendelegasikan Prefix Pool, serta informasi tambahan seperti DNS server dan domain search.
     
     **Cara kerja Stateful Mechanism**:
@@ -204,8 +205,7 @@ pesan yang berisi informasi penting seperti **prefix (awalan)** jaringan, **life
     Source IP : R1 G0/0 IP<br>
     Destination IP : R2 Solicited-node Multicast<br>
     Source MAC : R1 G0/0 MAC<br>
-    Destination MAC : Multicast MAC R2 solicited-node
-    
+    Destination MAC : Multicast MAC R2 solicited-node<br>
     Note:<br>
     IPv6 NDP tidak membroadcast tetapi unicast, jadi melihat dari **Solicated-node** berdasarkan **IP Unicast** pada saat ping karena **R1 mengetahui IPv6 R2**. misal `ping 2001:db8::78:9abc` > `ff02::1:ffa3:00b1` (solicated-node)
 
