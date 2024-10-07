@@ -69,11 +69,10 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
                 
         ![image4.png](./images/image4.png)
             
-    - **Unique Local Address (IP Private)**
-    
-    ⇒ communication between subnets and **cannot route on the Internet**, used for **internal private network** <br>
-    fc00::/7 (11111100) <br>
-    fc00::/8, fd00::/8, fe00::/8
+    - **Unique Local Address (IP Private)** <br>   
+        ⇒ communication between subnets and **cannot route on the Internet**, used for **internal private network** <br>
+        fc00::/7 (11111100) <br>
+        fc00::/8, fd00::/8, fe00::/8
 
     Note: 
     - Update **terbaru mengharuskan** **bit ke 8** di set ke 1, jadi **FD**
@@ -81,10 +80,8 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
         
         ![image5.png](./images/image5.png)
         
-    - **Link Local Address**
-
-        ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface 
-        
+    - **Link Local Address** <br>
+        ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface <br>
         address = fe80::/10
         Note:
         - Standardnya 54bit setelah fe80/10 harus 0, jadi only FE8
@@ -98,8 +95,8 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
                 - Konfigurasi link-local satu interface satu address
             - Configure
                 - `ipv6 enable`
-                    ⇒ enable ipv6 on interface
-                - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801`
+                    ⇒ enable ipv6 on interface <br>
+                - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801` <br>
                     ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
 2. **Multicast Address (one-to-many)**
     Address : ff00::/8 (General Multicast)
@@ -119,39 +116,32 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
     ![image6.png](./images/image6.png)
     
 3. **Anycast Address (one-to-one-of-many)**
-    ⇒ Menetapkan **ipv6 yang sama** **di multiple device (router)** yang berbeda tetapi tidak bentrok, melainkan akan **di arahkan ke perangkat terdekat.**
-    - **No Specific Address** range for anycast addresses.
+    ⇒ Menetapkan **ipv6 yang sama** **di multiple device (router)** yang berbeda tetapi tidak bentrok, melainkan akan **di arahkan ke perangkat terdekat.** <br>
+    **No Specific Address** range for anycast addresses.
         - Cara Kerja
-
             - Add ip anycast ke multiple device (router)
             - Host route akan meng advertise addressnya ke router lain.
             - ketika host send packet to destination address, router akan forward ke router terdekat yang dikonfigurasi dengan ip address yang sama (sama routeing metric)
         - Function
-
             - Ditugaskan ke lebih dari satu interface
             - Digunakan secara eksklusif oleh perangkat non-host, biasanya server
-        - Configuration
-
-            `ipv6 address 2001:db8:1:1::99/128 anycast`
+        - Configuration <br>
+            `ipv6 address 2001:db8:1:1::99/128 anycast` <br>
             ⇒ set ip address di multiple device
 
 ## Mekanisme Delegasi IPv6
 1. **Stateless Mechanism**
-    
     ⇒ Metode di mana device dalam jaringan dapat mengonfigurasi alamat IP mereka sendiri tanpa bantuan server DHCPv6. Proses ini disebut **SLAAC** (Stateless Address Autoconfiguration). Device menggunakan informasi yang dikirim oleh router melalui **Router Advertisement (RA)** untuk membentuk alamat IP.
     
 2. **Stateful Mechanism**
-    
     ⇒ Stateful Mechanism menggunakan **DHCPv6** (Dynamic Host Configuration Protocol for IPv6) dan **DHCPV6 Client** untuk konfigurasi IP dan informasi network lainnya. Dalam mekanisme ini, DHCPv6 server menyediakan alamat IP secara dinamis, Mendelegasikan Prefix Pool, serta informasi tambahan seperti DNS server dan domain search.
     
     **Cara kerja Stateful Mechanism**:
-    
     - Perangkat IPv6 mengirimkan permintaan ke server DHCPv6 untuk mendapatkan alamat IP dan konfigurasi lainnya.
     - Server DHCPv6 kemudian memberikan alamat IP yang tersedia dan informasi jaringan lainnya seperti DNS.
     - Dalam stateful mechanism, server DHCPv6 mencatat alamat IP yang telah diberikan ke perangkat (stateful) dan menjaga status ini untuk menghindari konflik IP.
 
 ## **IPv6 EUI-64 (Extended Unique Identifier)**
-
 ⇒ Method converting MAC Address (48-bit) to 64-bit interface for hosts, Combine Mac Address with FFFE in the middle. so, 64-bit network and 64-bit host.
 
 - Why Convert 7th bit
@@ -175,27 +165,26 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
     ⇒ 0**0** → 0b0000 00**0**0 (Binary) <br>
     ⇒ 0b0000 0010 → 0x02 (invert 7th)
     4. Finally, 02BB:CCFF:FEDD:1122
-- Configuration
-
+- Configuration <br>
 `ipv6 address 2001:db8::/64 eui-64`
 
 ## SLAAC (Stateles Address Auto-Configuration)
-
 ⇒ Metode otomatis dalam konfigurasi alamat IPv6 yang memungkinkan perangkat untuk secara otomatis mendapatkan alamat IP tanpa perlu konfigurasi manual atau server DHCP. SLAAC bekerja dengan memanfaatkan **Router Advertisement (RA)** yang dikirim oleh router pada jaringan lokal.
 
-1. **Host Mengirimkan Router Solicitation (RS)**
+1. **Host Mengirimkan Router Solicitation (RS)** <br>
 meminta informasi dari router yang ada di jaringan tentang konfigurasi address dan informasi network.
-2. **Router Mengirimkan Respon Router Advertisement (RA)**
+
+2. **Router Mengirimkan Respon Router Advertisement (RA)** <br>
 pesan yang berisi informasi penting seperti **prefix (awalan)** jaringan, **lifetime (masa hidup)**, dan instruksi apakah host harus menggunakan SLAAC atau konfigurasi lainnya seperti DHCPv6.
+
 3. **Host Membentuk Alamat IPv6 Unik**
     - **Prefix**: Bagian jaringan yang diberikan oleh router melalui RA.
     - **Interface Identifier (IID)**: Bagian unik yang dihasilkan oleh host untuk mengidentifikasi dirinya. IID biasanya dihasilkan dari **MAC address** atau EUI-64 dan bisa juga dengan metode **Randomized Identifier** untuk meningkatkan privasi.
+
 4. **Host Mengecheck Duplikat Address Detection (DAD)**
-    
     Host menjalankan **Duplikat Address Detection (DAD)** untuk memastikan bahwa alamat IPv6 yang baru dibentuk tidak ada yang sama. 
     
-5. **Host Dapat Mulai Menggunakan Alamat IPv6**
-    
+5. **Host Dapat Mulai Menggunakan Alamat IPv6** <br>
     Host dapat menggunakan alamat IPv6 yang telah dikonfigurasi. Host mendapatkan informasi terkait DNS, Gateway dari RA.
     
 
@@ -210,27 +199,29 @@ pesan yang berisi informasi penting seperti **prefix (awalan)** jaringan, **life
     
     Case: R1 mengetahui IPv6 R2 tetapi tidak MAC Addressnya
     
-    1. Maka R1 mengirimkan Message NDP, Packet yang dikirimkan yaitu **NS (Neighbor Solicitation)** dengan detail packet :
-    Source IP : R1 G0/0 IP
-    Destination IP : R2 Solicited-node Multicast
-    Source MAC : R1 G0/0 MAC
+    1. Maka R1 mengirimkan Message NDP, Packet yang dikirimkan yaitu **NS (Neighbor Solicitation)** dengan detail packet :<br>
+    Source IP : R1 G0/0 IP<br>
+    Destination IP : R2 Solicited-node Multicast<br>
+    Source MAC : R1 G0/0 MAC<br>
     Destination MAC : Multicast MAC R2 solicited-node
     
-    Note:
+    Note:<br>
     IPv6 NDP tidak membroadcast tetapi unicast, jadi melihat dari **Solicated-node** berdasarkan **IP Unicast** pada saat ping karena **R1 mengetahui IPv6 R2**. misal `ping 2001:db8::78:9abc` > `ff02::1:ffa3:00b1` (solicated-node)
-    2. **Reply packet NS**, dengan packet **NA (Neighbor Advertisement)**. detail packet:
-    Source IP : R2 G0/0 IP
-    Destination IP : R1 G0/0 IP
-    Source MAC : R2 G0/0 MAC
-    Destination MAC : R1 G0/0 MAC
-    3. Lalu di masukan ke dalam **Neighbore Table**
-    `show ipv6 neighbore` (Global Unicast & Link-local)
-- **Solicated-node Multicast** 
 
+    2. **Reply packet NS**, dengan packet **NA (Neighbor Advertisement)**. detail packet:<br>
+    Source IP : R2 G0/0 IP<br>
+    Destination IP : R1 G0/0 IP<br>
+    Source MAC : R2 G0/0 MAC<br>
+    Destination MAC : R1 G0/0 MAC
+
+    3. Lalu di masukan ke dalam **Neighbore Table** <br>
+    `show ipv6 neighbore` (Global Unicast & Link-local)
+
+- **Solicated-node Multicast** <br>
     ⇒ Multicast node ini di hitung dari unicast address **last 6 hex digits**.
     check ipv6 multicast node `sh ipv6 int g0/0`
     
-    ![image7.png](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/Untitled%204.png)
+    ![image7.png](./images/image7.png)
     
 
 ### DAD (Duplicate Address Detection)
@@ -239,9 +230,8 @@ Proses pada IPv6 yang digunakan untuk memastikan bahwa alamat IP yang dikonfigur
 
 **Cara Kerja**
 
-1. **Membentuk Alamat IPv6**
+1. **Membentuk Alamat IPv6** <br>
     Setelah host membentuk alamat IPv6, baik melalui **SLAAC** atau cara lain, alamat tersebut belum langsung digunakan sebelum dipastikan unik melalui proses DAD.
-    
 2. **Mengirimkan Neighbor Solicitation (NS)**
     - Host mengirimkan pesan **Neighbor Solicitation (NS)** ke alamat **Solicited-Node Multicast Address** yang terkait dengan alamat IPv6 yang ingin digunakan menggunakan ip multicast **`ff02`**.
     - Pesan ini meminta perangkat lain di jaringan untuk memberi tahu jika ada yang sudah menggunakan alamat tersebut.
@@ -254,7 +244,6 @@ Proses pada IPv6 yang digunakan untuk memastikan bahwa alamat IP yang dikonfigur
 
 ### Router Solicitation/Advertisement
 ⇒ fungsi lain NDP untuk menemukan router di network local secara automatic. ip neighbore
-
 - Messages
     1. Router Solicitation (RS) = ICMPv6 Type 133
         - sent to multicast address FF02::2 (all routers)
