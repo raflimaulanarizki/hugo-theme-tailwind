@@ -58,6 +58,7 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
 1. **Unicast (one to one)**
     - **IPv6 Global Unicast (ipv6 public)** <br>
         ⇒ IPv6 address dapat digunakan di internet seperti halnya public ipv4 
+
         Bit : 48 (3 collon first)       
         address range delegasi IANA : 2000::/3
         
@@ -72,7 +73,7 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
     
     ⇒ communication between subnets and **cannot route on the Internet**, used for **internal private network** <br>
     fc00::/7 (11111100) <br>
-    fc00::/8, fd00::/8, fe00::/8**
+    fc00::/8, fd00::/8, fe00::/8
 
     Note: 
     - Update **terbaru mengharuskan** **bit ke 8** di set ke 1, jadi **FD**
@@ -81,7 +82,9 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
         ![image5.png](./images/image5.png)
         
     - **Link Local Address**
+
         ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface 
+        
         address = fe80::/10
         Note:
         - Standardnya 54bit setelah fe80/10 harus 0, jadi only FE8
@@ -95,8 +98,10 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
                 - Konfigurasi link-local satu interface satu address
             - Configure
                 - `ipv6 enable`
+
                 ⇒ enable ipv6 on interface
                 - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801`
+                
                 ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
 2. **Multicast Address (one-to-many)**
     Address : ff00::/8 (General Multicast)
