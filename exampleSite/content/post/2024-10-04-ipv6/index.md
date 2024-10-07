@@ -16,14 +16,12 @@ tags : [
 
 IPv4/IPv6 di distribusikan oleh IANA ke RIRs (Regional Internet Registries) ie. APNIC, AFRINIC, ARIN, LACNIC, RIPE NCC.
 
-| IPv6 = 32 Bits
-IPv4 = 4.294.867.296 (2 pangkat 32) | IPv6 = 128 Bits 
-IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion) |
-| --- | --- |
+| IPv4 = 32 Bits | IPv6 = 128 Bits |
+IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion) |
 
 ### **RFC 5952**
 
-**⇒ “A Recommendation for IPv6 Address Text Representation,** Standard penggunaan IPv6 RFC 5952
+⇒**“A Recommendation for IPv6 Address Text Representation,** Standard penggunaan IPv6 RFC 5952
 
 - angka 0 didepan harus di remove
 - :: harus digunakan untuk memperpendek **string terpanjang** dari all-0 quartets dan mempersingkat **all-0 quartets kiri** terlebih dahulu
@@ -58,22 +56,24 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
 ![image3.png](./images/image3.png)
 
 1. **Unicast (one to one)**
-    - **IPv6 Global Unicast (ipv6 public)**
-    
-    ⇒ IPv6 address dapat digunakan di internet seperti halnya public ipv4 
-    Bit : 48 (3 collon first)
-    address range delegasi IANA : 2000::/3
+    - **IPv6 Global Unicast (ipv6 public)** <br>
+        ⇒ IPv6 address dapat digunakan di internet seperti halnya public ipv4 
+        Bit : 48 (3 collon first)       
+        address range delegasi IANA : 2000::/3
         
-    **Fungsi Global Unicast**
-        
-    - identification interface on ipv6 device
-    - include dengan link-local dan loopback address pada saat dibuat unicast
+        **Fungsi Global Unicast**
+            
+        - identification interface on ipv6 device
+        - include dengan link-local dan loopback address pada saat dibuat unicast
+                
         ![image4.png](./images/image4.png)
-        
-    - **Unique Local Address (IP Private)
-    ⇒** communication between subnets and **cannot route on the Internet**, used for **internal private network**
-    -> **fc00::/7 (11111100)
-       - fc00::/8, fd00::/8, fe00::/8**
+            
+    - **Unique Local Address (IP Private)**
+    
+    ⇒ communication between subnets and **cannot route on the Internet**, used for **internal private network** <br>
+    fc00::/7 (11111100) <br>
+    fc00::/8, fd00::/8, fe00::/8**
+
     Note: 
     - Update **terbaru mengharuskan** **bit ke 8** di set ke 1, jadi **FD**
     - **Global ID**, harus unik dan random agar tidak overlap saat perusahaan bergabung.
@@ -81,23 +81,23 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
         ![image5.png](./images/image5.png)
         
     - **Link Local Address**
-    ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface 
-    address = fe80::/10
-    Note:
-    - Standardnya 54bit setelah fe80/10 harus 0, jadi only FE8
-    - Interface ID di **generete using EUI-64**
-    - ****Tidak dapat dijadian **destination network** dan **will not route**
-    - only 1 subnet, yakni fe80::/10
-        - Fungsi Link local
-            - Routing Protocol Peering (OSPFv3 uses link-local for neighbore adjancencies)
-            - Berfungsi sebagai gateway/hop for static route
-            - Neighbore Discovery Protocol (NDP, pengganti ARP ipv6), berguna agar link-local addres berfungsi
-            - Konfigurasi link-local satu interface satu address
-        - Configure
-            - `ipv6 enable`
-            ⇒ enable ipv6 on interface
-            - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801`
-            ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
+        ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface 
+        address = fe80::/10
+        Note:
+        - Standardnya 54bit setelah fe80/10 harus 0, jadi only FE8
+        - Interface ID di **generete using EUI-64**
+        - Tidak dapat dijadikan **destination network** dan **will not route**
+        - only 1 subnet, yakni fe80::/10
+            - Fungsi Link local
+                - Routing Protocol Peering (OSPFv3 uses link-local for neighbore adjancencies)
+                - Berfungsi sebagai gateway/hop for static route
+                - Neighbore Discovery Protocol (NDP, pengganti ARP ipv6), berguna agar link-local addres berfungsi
+                - Konfigurasi link-local satu interface satu address
+            - Configure
+                - `ipv6 enable`
+                ⇒ enable ipv6 on interface
+                - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801`
+                ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
 2. **Multicast Address (one-to-many)**
     Address : ff00::/8 (General Multicast)
     
@@ -116,22 +116,23 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
     ![image6.png](./images/image6.png)
     
 3. **Anycast Address (one-to-one-of-many)**
-= Menetapkan **ipv6 yang sama** **di multiple device (router)** yang berbeda tetapi tidak bentrok, melainkan akan **di arahkan ke perangkat terdekat.**
-- **No Specific Address** range for anycast addresses.
-    - Cara Kerja
-        - Add ip anycast ke multiple device (router)
-        - Host route akan meng advertise addressnya ke router lain.
-        - ketika host send packet to destination address, router akan forward ke router terdekat yang dikonfigurasi dengan ip address yang sama (sama routeing metric)
-    - Function
-        - Ditugaskan ke lebih dari satu interface
-        - Digunakan secara eksklusif oleh perangkat non-host, biasanya server
-    - Configuration
+    ⇒ Menetapkan **ipv6 yang sama** **di multiple device (router)** yang berbeda tetapi tidak bentrok, melainkan akan **di arahkan ke perangkat terdekat.**
+    - **No Specific Address** range for anycast addresses.
+        - Cara Kerja
 
-        `ipv6 address 2001:db8:1:1::99/128 anycast`
-        ⇒ set ip address di multiple device
+            - Add ip anycast ke multiple device (router)
+            - Host route akan meng advertise addressnya ke router lain.
+            - ketika host send packet to destination address, router akan forward ke router terdekat yang dikonfigurasi dengan ip address yang sama (sama routeing metric)
+        - Function
+
+            - Ditugaskan ke lebih dari satu interface
+            - Digunakan secara eksklusif oleh perangkat non-host, biasanya server
+        - Configuration
+
+            `ipv6 address 2001:db8:1:1::99/128 anycast`
+            ⇒ set ip address di multiple device
 
 ## Mekanisme Delegasi IPv6
-
 1. **Stateless Mechanism**
     
     ⇒ Metode di mana device dalam jaringan dapat mengonfigurasi alamat IP mereka sendiri tanpa bantuan server DHCPv6. Proses ini disebut **SLAAC** (Stateless Address Autoconfiguration). Device menggunakan informasi yang dikirim oleh router melalui **Router Advertisement (RA)** untuk membentuk alamat IP.
@@ -165,13 +166,14 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
         - U/L bit set to 1 = MAC Addres yang telah di convert EUI-64 UAA
 - Calculate
     1. Split Mac Address in to two ( 00:BB:CC | DD:11:22)
-    2. Insert FFFE Hexa in the middle
+    2. Insert FFFE Hexa in the middle <br>
      Eg: 00:BB:CC:DD:11:22 --> 00BB:CCFF:FEDD:1122
-    3. Invert the 7th Bit of the MAC address (0 to 1)
-    ⇒ 0**0** → 0b0000 00**0**0 (Binary)
+    3. Invert the 7th Bit of the MAC address (0 to 1) <br>
+    ⇒ 0**0** → 0b0000 00**0**0 (Binary) <br>
     ⇒ 0b0000 0010 → 0x02 (invert 7th)
     4. Finally, 02BB:CCFF:FEDD:1122
 - Configuration
+
 `ipv6 address 2001:db8::/64 eui-64`
 
 ## SLAAC (Stateles Address Auto-Configuration)
@@ -248,7 +250,6 @@ Proses pada IPv6 yang digunakan untuk memastikan bahwa alamat IP yang dikonfigur
     - Jika proses DAD berhasil (tidak ada respons), host akan mulai menggunakan alamat tersebut.
 
 ### Router Solicitation/Advertisement
-
 ⇒ fungsi lain NDP untuk menemukan router di network local secara automatic. ip neighbore
 
 - Messages
