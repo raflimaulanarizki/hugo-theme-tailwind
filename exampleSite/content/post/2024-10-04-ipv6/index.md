@@ -189,30 +189,30 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
 
 - Message Types
     1. Neighbor Solicitation (NS) = ICMPv6 Type 135
-    2. Neighbor Advertisement (NA) = ICMPv6 Type 136
+    2. Neighbor Advertisement (NA) = ICMPv6 Type 136  
     ⇒ sama dengan NDP Reply ARP.
 - Cara Kerja NDP  
     Case: R1 mengetahui IPv6 R2 tetapi tidak MAC Addressnya
 
     1. Maka R1 mengirimkan Message NDP, Packet yang dikirimkan yaitu **NS (Neighbor Solicitation)** dengan detail packet : 
-    Source IP : R1 G0/0 IP 
-    Destination IP : R2 Solicited-node Multicast 
-    Source MAC : R1 G0/0 MAC 
-    Destination MAC : Multicast MAC R2 solicited-node 
-    Note: 
+    Source IP : R1 G0/0 IP   
+    Destination IP : R2 Solicited-node Multicast   
+    Source MAC : R1 G0/0 MAC  
+    Destination MAC : Multicast MAC R2 solicited-node  
+    Note:  
     IPv6 NDP tidak membroadcast tetapi unicast, jadi melihat dari **Solicated-node** berdasarkan **IP Unicast** pada saat ping karena **R1 mengetahui IPv6 R2**. misal `ping 2001:db8::78:9abc` > `ff02::1:ffa3:00b1` (solicated-node)
 
-    2. **Reply packet NS**, dengan packet **NA (Neighbor Advertisement)**. detail packet: 
-    Source IP : R2 G0/0 IP 
-    Destination IP : R1 G0/0 IP 
-    Source MAC : R2 G0/0 MAC 
+    2. **Reply packet NS**, dengan packet **NA (Neighbor Advertisement)**. detail packet:  
+    Source IP : R2 G0/0 IP  
+    Destination IP : R1 G0/0 IP  
+    Source MAC : R2 G0/0 MAC  
     Destination MAC : R1 G0/0 MAC
 
     3. Lalu di masukan ke dalam **Neighbore Table**  
     `show ipv6 neighbore` (Global Unicast & Link-local)
 
 - **Solicated-node Multicast**  
-    ⇒ Multicast node ini di hitung dari unicast address **last 6 hex digits**.
+    ⇒ Multicast node ini di hitung dari unicast address **last 6 hex digits**.  
     check ipv6 multicast node `sh ipv6 int g0/0`
     
     ![image7.png](./images/image7.png)
