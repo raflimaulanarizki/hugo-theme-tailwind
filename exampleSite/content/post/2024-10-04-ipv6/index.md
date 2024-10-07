@@ -3,10 +3,10 @@ author: "Muhamad Rafli Maulana Rizki"
 title: "IPv6"
 date: 2023-05-11
 pin: 
-image: "./images/juniper.png"
-description: "Basic Configuration Juniper."
+image: "./images/logo.png"
+description: "IPv4 (IANA) yang tersedia sudah **tidak mencukupi**, karena sudah cukup lama mulai dari 1982 hingga sekarang yang pengunannya lebih dari 4 Milliar penduduk dunia. Maka dari itu dibutuhkan lah address baru untuk memenuhi kebutuhan internet di dunia yakni, IPv6. "
 tags : [
-    "Juniper",
+    "IPv6",
     "Network",
 ]
 ---
@@ -31,7 +31,7 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
 
 ### Provide IPv6
 
-![image.png](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/image.png)
+![image1.png](./images/image1.png)
 
 - IANA membagikan Pool **/12** IPv6 ke Registries (APNIC, AFRINIC, ARIN, LACNIC, RIPE NCC)
 - ISP/Companny akan menerima blok **ipv6 /32 atau /48** dari RIR distribute
@@ -42,7 +42,7 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
 
 ⇒ IPv6 Header jauh lebih mudah bagi router, sehingga kinerja secara umum meningkat
 
-![Untitled](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/Untitled.png)
+![image2.png](./images/image2.png)
 
 - Version (4bits) : menunjukan version IP. value version 6 (0b0110)
 - Traffic Class (8Bits) : Used for QoS untuk menunjukan high-priority traffic. seperti IP Phone, Streaming.
@@ -55,20 +55,20 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
 
 ## IPv6 Address Types
 
-![image.png](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/e3cb204b-574b-49e6-9b53-839e193e50a6.png)
+![image3.png](./images/image3.png)
 
 1. **Unicast (one to one)**
     - **IPv6 Global Unicast (ipv6 public)**
-    ⇒ IPv6 address dapat digunakan di internet seperti halnya public ipv4  
-    ****Bit : 48 (3 collon first)
+    
+    ⇒ IPv6 address dapat digunakan di internet seperti halnya public ipv4 
+    Bit : 48 (3 collon first)
     address range delegasi IANA : 2000::/3
         
-        **Fungsi Global Unicast**
+    **Fungsi Global Unicast**
         
-        - identification interface on ipv6 device
-        - include dengan link-local dan loopback address pada saat dibuat unicast
-        
-        ![Untitled](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/Untitled%201.png)
+    - identification interface on ipv6 device
+    - include dengan link-local dan loopback address pada saat dibuat unicast
+        ![image4.png](./images/image4.png)
         
     - **Unique Local Address (IP Private)
     ⇒** communication between subnets and **cannot route on the Internet**, used for **internal private network**
@@ -78,7 +78,7 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
     - Update **terbaru mengharuskan** **bit ke 8** di set ke 1, jadi **FD**
     - **Global ID**, harus unik dan random agar tidak overlap saat perusahaan bergabung.
         
-        ![Untitled](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/Untitled%202.png)
+        ![image5.png](./images/image5.png)
         
     - **Link Local Address**
     ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface 
@@ -99,22 +99,22 @@ IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion
             - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801`
             ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
 2. **Multicast Address (one-to-many)**
-Address : ff00::/8 (General Multicast)
-    - IPv6 Multicast Scopes
-    ⇒ beberapa multicast “scopes” menunjukan seberapa jauh packet mulitcast di forward.
-        - **Interface-local (FF01)**
-        ⇒ Packet **doesn’t leave dari local device**. hanya digunakan untuk traffic yang berjalan dalam local device.
-        - **Link-local (FF02)**
-        ⇒ Packet **tetap dalam local subnet** dan tidak dirutekan antar subnet, can be used to send a message to hosts connected to the local link.
-        - **Site-local (FF05)**
-        ⇒ packet **can be forwarded by routers**. tetapi data tersebut dilimit pada single pyhsical location (**not forwarded** melalui **WAN**)
-        - **Organization-local (FF08)**
-        ⇒ berfungsi agar **cakupannya (scope) lebih luas** dibandingkan multicast site-local (seluruh company/organization).
-        - **Global (FFOE)**
-        ⇒ Address ini **tidak ada batasan** dan **lebih luas dari organizaion-local** dan dapat **diroute melalui public internet**.
-        
-        ![Untitled](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/Untitled%203.png)
-        
+    Address : ff00::/8 (General Multicast)
+    
+    **IPv6 Multicast Scopes**, => seberapa jauh packet mulitcast di forward.
+    - **Interface-local (FF01)**
+    ⇒ Packet **doesn’t leave dari local device**. hanya digunakan untuk traffic yang berjalan dalam local device.
+    - **Link-local (FF02)**
+    ⇒ Packet **tetap dalam local subnet** dan tidak dirutekan antar subnet, can be used to send a message to hosts connected to the local link.
+    - **Site-local (FF05)**
+    ⇒ packet **can be forwarded by routers**. tetapi data tersebut dilimit pada single pyhsical location (**not forwarded** melalui **WAN**)
+    - **Organization-local (FF08)**
+    ⇒ berfungsi agar **cakupannya (scope) lebih luas** dibandingkan multicast site-local (seluruh company/organization).
+    - **Global (FFOE)**
+    ⇒ Address ini **tidak ada batasan** dan **lebih luas dari organizaion-local** dan dapat **diroute melalui public internet**.
+    
+    ![image6.png](./images/image6.png)
+    
 3. **Anycast Address (one-to-one-of-many)**
 = Menetapkan **ipv6 yang sama** **di multiple device (router)** yang berbeda tetapi tidak bentrok, melainkan akan **di arahkan ke perangkat terdekat.**
 - **No Specific Address** range for anycast addresses.
@@ -126,8 +126,9 @@ Address : ff00::/8 (General Multicast)
         - Ditugaskan ke lebih dari satu interface
         - Digunakan secara eksklusif oleh perangkat non-host, biasanya server
     - Configuration
-    `ipv6 address 2001:db8:1:1::99/128 anycast`
-    ⇒ set ip address di multiple device
+
+        `ipv6 address 2001:db8:1:1::99/128 anycast`
+        ⇒ set ip address di multiple device
 
 ## Mekanisme Delegasi IPv6
 
@@ -194,7 +195,6 @@ pesan yang berisi informasi penting seperti **prefix (awalan)** jaringan, **life
     
 
 ## NDP (Neighbore Discovery Protocol)
-
 ⇒ Protocol sejenis ARP pada IPv4, tetapi jika pada IPv6 menggunakan Protocol **NDP**. NDP menggunakan ICMPv6 dan Solicated-node Multicast address for learn MAC Address of other hosts. Melalu NDP ini device akan terdeteksi sebagai **Host** atau **Router**.
 
 - Message Types
@@ -202,7 +202,9 @@ pesan yang berisi informasi penting seperti **prefix (awalan)** jaringan, **life
     2. Neighbor Advertisement (NA) = ICMPv6 Type 136
     ⇒ sama dengan NDP Reply ARP.
 - Cara Kerja NDP
-Case: R1 mengetahui IPv6 R2 tetapi tidak MAC Addressnya
+    
+    Case: R1 mengetahui IPv6 R2 tetapi tidak MAC Addressnya
+    
     1. Maka R1 mengirimkan Message NDP, Packet yang dikirimkan yaitu **NS (Neighbor Solicitation)** dengan detail packet :
     Source IP : R1 G0/0 IP
     Destination IP : R2 Solicited-node Multicast
@@ -219,10 +221,11 @@ Case: R1 mengetahui IPv6 R2 tetapi tidak MAC Addressnya
     3. Lalu di masukan ke dalam **Neighbore Table**
     `show ipv6 neighbore` (Global Unicast & Link-local)
 - **Solicated-node Multicast** 
-⇒ Multicast node ini di hitung dari unicast address **last 6 hex digits**.
-check ipv6 multicast node `sh ipv6 int g0/0`
+
+    ⇒ Multicast node ini di hitung dari unicast address **last 6 hex digits**.
+    check ipv6 multicast node `sh ipv6 int g0/0`
     
-    ![Untitled](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/Untitled%204.png)
+    ![image7.png](IPv6%2011377c312caa80718eaeee3dcc0ff8cf/Untitled%204.png)
     
 
 ### DAD (Duplicate Address Detection)
@@ -232,7 +235,6 @@ Proses pada IPv6 yang digunakan untuk memastikan bahwa alamat IP yang dikonfigur
 **Cara Kerja**
 
 1. **Membentuk Alamat IPv6**
-    
     Setelah host membentuk alamat IPv6, baik melalui **SLAAC** atau cara lain, alamat tersebut belum langsung digunakan sebelum dipastikan unik melalui proses DAD.
     
 2. **Mengirimkan Neighbor Solicitation (NS)**
@@ -251,13 +253,13 @@ Proses pada IPv6 yang digunakan untuk memastikan bahwa alamat IP yang dikonfigur
 
 - Messages
     1. Router Solicitation (RS) = ICMPv6 Type 133
-    ⇒ sent to multicast address FF02::2 (all routers)
-    ⇒ Message ini meminta router pada link-local local network, untuk identifikasi dirinya.
-    ⇒ message ini di send pada saat interface enable or host connected.
+        - sent to multicast address FF02::2 (all routers)
+        - Message ini meminta router pada link-local local network, untuk identifikasi dirinya.
+        - message ini di send pada saat interface enable or host connected.
     2. Router Advertisement (RA) = ICMPv6 Type 134
-    ⇒ Sent to multicast address FF02::1 (all node)
-    ⇒ router akan mengumumkan kehadirannya dan memberikan information link local network.
-    ⇒ Respon dari RS Messages. jika router tidak menerima RS, router tetan sent RA.
+        - Sent to multicast address FF02::1 (all node)
+        - router akan mengumumkan kehadirannya dan memberikan information link local network.
+        - Respon dari RS Messages. jika router tidak menerima RS, router tetan sent RA.
 - Cara Kerja
     1. R1 enable G0/0, maka R1 akan mengirimkan RS untuk menanyakan apakah ada router di link ini?
     2. R2 akan menjawab message RS dengan RA
