@@ -142,9 +142,9 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
 
 - Why Convert 7th bit
     - Type MAC Address
-        - UAA (Universally Administered Address)
+        - UAA (Universally Administered Address)  
         ⇒ Unique MAC Addres yang di assigned by the manufacture (perusahaan)
-        - LAA (Locally Administered Address)
+        - LAA (Locally Administered Address)  
         ⇒ manual assigned by admin or protocol (`mac-address` configure manual interface)
     - Identify UAA and LAA
     ⇒ Identifikasi berdasarkan **7th bit** MAC address, yang disebut **U/L bit** (Universal/Local)
@@ -194,7 +194,7 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
 - Cara Kerja NDP  
     Case: R1 mengetahui IPv6 R2 tetapi tidak MAC Addressnya
 
-    1. Maka R1 mengirimkan Message NDP, Packet yang dikirimkan yaitu **NS (Neighbor Solicitation)** dengan detail packet : 
+    1. Maka R1 mengirimkan Message NDP, Packet yang dikirimkan yaitu **NS (Neighbor Solicitation)** dengan detail packet :  
     Source IP : R1 G0/0 IP   
     Destination IP : R2 Solicited-node Multicast   
     Source MAC : R1 G0/0 MAC  
