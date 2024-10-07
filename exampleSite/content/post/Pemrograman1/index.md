@@ -258,3 +258,61 @@ fpc test.pas
   ```
   **Run Program**
   {{< asciinema_local "./images/Pertemuan3.cast" >}}  
+
+## Pertemuan#4
+
+**Struktur Kondisi**
+  ```sh
+    if (kondisi) then
+        begin
+            (kode program 1)
+        end
+    else if (kondisi) then
+        begin
+            (kode program 2)
+        end;
+    else
+        begin
+            (kode program 2)
+        end;
+  ```
+
+  ```sh {linenos=true}
+    program Latihan_Pertemuan4; 
+    uses crt;
+    var
+        tahun : integer;
+        input1, input2 : real;
+    begin
+        clrscr;
+        
+        writeln('=========Latihan1==========');
+        writeln('Program apakah tahun yang di inputkan termasuk tahun Kabisat!');
+        
+        write ('Input Tahun : '); readln (tahun);
+        if (tahun mod 4 = 0) then
+            begin
+                writeln('Tahun ', tahun, ' Adalah Tahun Kabisat')
+            end
+        else
+            begin
+                writeln('Tahun ', tahun, ' Bukan Tahun Kabisat')
+            end;
+            
+        writeln('=========Latihan2==========');
+        writeln('Tentukan angka terbesar dari 2 buah angka yang diinputkan!');
+        
+        write ('Input angka pertama : '); readln (input1);
+        write ('Input angka kedua : '); readln (input2);
+        if (input1 > input2) then
+            begin
+                writeln('Angka terbesar adalah : ', input1:0:2)
+            end
+        else
+            begin
+                writeln('Angka terbesar adalah : ', input2:0:2)
+            end;
+    end.
+  ```
+  **Run Program**
+  {{< asciinema_local "./images/Pertemuan4.cast" >}}  
