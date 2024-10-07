@@ -57,21 +57,19 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
 
 1. **Unicast (one to one)**
     - **IPv6 Global Unicast (ipv6 public)**   
-        ⇒ IPv6 address dapat digunakan di internet seperti halnya public ipv4 
-
-        Bit : 48 (3 collon first)       
+        ⇒ IPv6 address dapat digunakan di internet seperti halnya public ipv4  
+        Bit : 48 (3 collon first)  
         address range delegasi IANA : 2000::/3
         
-        **Fungsi Global Unicast**
-            
+        **Fungsi Global Unicast**  
         - identification interface on ipv6 device
         - include dengan link-local dan loopback address pada saat dibuat unicast
                 
         ![image4.png](./images/image4.png)
             
     - **Unique Local Address (IP Private)**   
-        ⇒ communication between subnets and **cannot route on the Internet**, used for **internal private network** <br>
-        fc00::/7 (11111100) <br>
+        ⇒ communication between subnets and **cannot route on the Internet**, used for **internal private network**  
+        fc00::/7 (11111100)  
         fc00::/8, fd00::/8, fe00::/8
 
         Note: 
