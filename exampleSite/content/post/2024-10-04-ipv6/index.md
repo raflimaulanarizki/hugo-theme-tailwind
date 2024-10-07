@@ -10,8 +10,7 @@ tags : [
     "Network",
 ]
 ---
-## Why IPv6
-
+## Why IPv6  
 ⇒ IPv4 (IANA) yang tersedia sudah **tidak mencukupi**, karena sudah cukup lama mulai dari 1982 hingga sekarang yang pengunannya lebih dari 4 Milliar penduduk dunia. Maka dari itu dibutuhkan lah address baru untuk memenuhi kebutuhan internet di dunia yakni, IPv6. 
 
 IPv4/IPv6 di distribusikan oleh IANA ke RIRs (Regional Internet Registries) ie. APNIC, AFRINIC, ARIN, LACNIC, RIPE NCC.
@@ -19,16 +18,14 @@ IPv4/IPv6 di distribusikan oleh IANA ke RIRs (Regional Internet Registries) ie. 
 | IPv4 = 32 Bits | IPv6 = 128 Bits |
 IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.474.607.431.768.211.456 (340 undecilion) |
 
-### **RFC 5952**
-
+### **RFC 5952**  
 ⇒**“A Recommendation for IPv6 Address Text Representation,** Standard penggunaan IPv6 RFC 5952
 
 - angka 0 didepan harus di remove
 - :: harus digunakan untuk memperpendek **string terpanjang** dari all-0 quartets dan mempersingkat **all-0 quartets kiri** terlebih dahulu
 - hexadecimal characters huruf, di tulis menggunakan lower-case (a) NOT upper-case (A) (tidak berpengaruh jika Upper Case)
 
-### Provide IPv6
-
+### Provide IPv6  
 ![image1.png](./images/image1.png)
 
 - IANA membagikan Pool **/12** IPv6 ke Registries (APNIC, AFRINIC, ARIN, LACNIC, RIPE NCC)
@@ -36,8 +33,7 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
 - Jika Company/ISP ingin di distribusikan kembali maka bisa di berikan pool **/48 - /56**
 - Untuk Mendistribusikan Subnet ipv6 ke hosts/device menggunakan **/64** prefix length.
 
-### **IP Header IPv6**
-
+### **IP Header IPv6**  
 ⇒ IPv6 Header jauh lebih mudah bagi router, sehingga kinerja secara umum meningkat
 
 ![image2.png](./images/image2.png)
@@ -51,8 +47,7 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
 - Source Address (128bit) : source address packet
 - Destination Address (128bit) : destination address packet
 
-## IPv6 Address Types
-
+## IPv6 Address Types  
 ![image3.png](./images/image3.png)
 
 1. **Unicast (one to one)**
@@ -78,8 +73,8 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
         
         ![image5.png](./images/image5.png)
         
-    - **Link Local Address** <br>
-        ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface <br>
+    - **Link Local Address**  
+        ⇒ Link-local di generete secara otomatis pada saat enable IPv6 on router dan interface  
         address = fe80::/10
         
         Note:
@@ -93,11 +88,11 @@ IPv4 = 4.294.867.296 (2 pangkat 32)  | IPv6 Hosts = 340.282.366.920.938.463.463.
                 - Neighbore Discovery Protocol (NDP, pengganti ARP ipv6), berguna agar link-local addres berfungsi
                 - Konfigurasi link-local satu interface satu address
             - Configure
-                - `ipv6 enable`
-                    ⇒ enable ipv6 on interface <br>
-                - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801` <br>
+                - `ipv6 enable`  
+                    ⇒ enable ipv6 on interface
+                - `ipv6 route 2001:db8:0:1::/64 g0/0 fe80::201:63ff:feb0:b801`  
                     ⇒ ip route use **next-hop** **Link-local and interface (Fully Specified).**
-2. **Multicast Address (one-to-many)**<br>
+2. **Multicast Address (one-to-many)**  
     Address : ff00::/8 (General Multicast)
     
     **IPv6 Multicast Scopes**, => seberapa jauh packet mulitcast di forward.
