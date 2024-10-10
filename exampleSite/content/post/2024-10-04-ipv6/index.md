@@ -1,7 +1,7 @@
 ---
 author: "Muhamad Rafli Maulana Rizki"
 title: "IPv6"
-date: 2023-05-11
+date: 2024-10-10
 pin: 
 image: "./images/logo.png"
 description: "IPv4 (IANA) yang tersedia sudah **tidak mencukupi**, karena sudah cukup lama mulai dari 1982 hingga sekarang yang pengunannya lebih dari 4 Milliar penduduk dunia. Maka dari itu dibutuhkan lah address baru untuk memenuhi kebutuhan internet di dunia yakni, IPv6. "
