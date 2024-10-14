@@ -314,5 +314,61 @@ fpc test.pas
             end;
     end.
   ```
-  **Run Program**
-  {{< asciinema_local "./images/Pertemuan4.cast" >}}  
+**Run Program**
+{{< asciinema_local "./images/Pertemuan4.cast" >}}  
+
+## Pertemuan#5
+```sh {linenos=true}
+    program Latihan_Pertemuan5; 
+    uses crt;
+    var
+        tugas,uts,uas,nilai : real;
+        lulus : string;
+    begin
+        clrscr;
+        write('Input Nilai Tugas    : '); readln (tugas);
+        write('Input Nilai UTS      : '); readln (uts);
+        write('Input Nilai UAS      : '); readln (uas);
+        nilai := (20/100) * tugas + (30/100) * uts + (50/100) * uas;
+        
+        if (nilai >= 70) then
+            lulus := 'LULUS'
+        else
+            lulus := 'Tidak Lulus';
+        
+        if (nilai <= 100) and ( nilai >= 91) then
+            begin
+                writeln ('Nilai Akhir : ', nilai:0:2);
+                writeln ('Nilai Hiruf : A');    
+                writeln ('Selamat Anda Dinyatakan ', lulus);
+            end
+        else if (nilai <=90) and ( nilai >= 76) then
+            begin
+                writeln ('Nilai Akhir : ', nilai:0:2);
+                writeln ('Nilai Hiruf : B');
+                writeln ('Selamat Anda Dinyatakan ', lulus);
+            end
+        else if (nilai <=75) and (nilai >= 61) then
+            begin
+                writeln ('Nilai Akhir : ', nilai:0:2);
+                writeln ('Nilai Hiruf : C');
+                writeln ('Selamat Anda Dinyatakan ', lulus);
+            end
+        else if (nilai <=60) and (nilai >= 41) then
+            begin
+                writeln ('Nilai Akhir : ', nilai:0:2);
+                writeln ('Nilai Hiruf : D');
+                writeln ('Selamat Anda Dinyatakan ', lulus);
+            end
+        else if (nilai <=40) and (nilai >= 0) then
+            begin
+                writeln ('Nilai Akhir : ', nilai:0:2);
+                writeln ('Nilai Hiruf : E');
+                writeln ('Selamat Anda Dinyatakan ', lulus);
+            end
+    end.
+```
+- Membuat 2 kondisi dalam 1 `if` menggunakan operator logika `and/or/not`
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan5.cast" >}} 
