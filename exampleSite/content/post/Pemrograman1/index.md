@@ -371,4 +371,4 @@ fpc test.pas
 - Membuat 2 kondisi dalam 1 `if` menggunakan operator logika `and/or/not`
 
 **Run Program**
-{{< asciinema_local "./images/Pertemuan5.cast" >}} 
+{{< asciinema_local "./images/pertemuan5.cast" >}} 
