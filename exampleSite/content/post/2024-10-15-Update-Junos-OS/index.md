@@ -3,7 +3,7 @@ author: "Muhamad Rafli Maulana Rizki"
 title: "Updating Junos OS Firmware - Juniper"
 date: "2024-09-23"
 pin: 
-image: "/images/logo.png"
+image: "/images/image2.png"
 description: Untuk melakukan upgrade firmware **Juniper** (router atau switch), Anda harus mengikuti langkah-langkah berikut dengan hati-hati. Upgrade firmware di perangkat Juniper biasanya dilakukan melalui **Junos OS** yang merupakan sistem operasi perangkat tersebut."
 tags : [
     "Juniper",
@@ -28,7 +28,7 @@ Jika device yang akan di upgrade sudah jauh dengan version yang ada sekarang, ma
     
     Pastikan sudah memiliki account Juniper yang mendapatkan hak akses untuk download software. 
 
-    ![image.png](Updating%20Junos%20OS%20Firmware%20-%20Juniper%2011f77c312caa80a28471e17cd06fb6b8/image.png)
+    ![image.png](./images/image.png)
 
 2. Upload firmware to Juniper
     1. Via Flashdisk
@@ -62,7 +62,7 @@ Jika device yang akan di upgrade sudah jauh dengan version yang ada sekarang, ma
 
 **Not enough storage while upgrading Junos EX2300 and EX3400**
 
-![image.png](Updating%20Junos%20OS%20Firmware%20-%20Juniper%2011f77c312caa80a28471e17cd06fb6b8/image%201.png)
+![image.png](./images/image1.png)
 
 [CEC Juniper Community](https://supportportal.juniper.net/s/article/EX-Not-enough-storage-while-upgrading-Junos-EX2300-and-EX3400?language=en_US)
 
