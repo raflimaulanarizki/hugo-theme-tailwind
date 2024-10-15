@@ -25,7 +25,7 @@ Jika device yang akan di upgrade sudah jauh dengan version yang ada sekarang, ma
 ## Upgrade
 
 1. Download Firmware pada website juniper [https://support.juniper.net/support/downloads](https://support.juniper.net/support/downloads/), pilih Seri Device yang ingin di upgrade, pilih OS “Junos” dan Version yg di inginkan dengan format .tgz.  
-    
+
     Pastikan sudah memiliki account Juniper yang mendapatkan hak akses untuk download software. 
 
     ![image.png](./images/image.png)
@@ -35,9 +35,9 @@ Jika device yang akan di upgrade sudah jauh dengan version yang ada sekarang, ma
         - Pastikan Firmware sudah dicopy ke FD, lalu di colok pada belakang switch/router
         - Masuk ke shell Juniper via SSH/Console
         - check `ls /dev/da*` apakah sudah terbaca FD “`/dev/da1s1`”
-        - `mkdir /var/tmp/usb`, buat folder untuk mo
+        - `mkdir /var/tmp/usb`, buat folder untuk mount
         - `mount_msdosfs /dev/da1s1 /var/tmp/usb`, Agar file pada FD dapat di akses
-        - `cp /var/tmp/usb/junos* /var/tmp`, Copy file package agar bisa di baca oleh juniper
+        - `cp /var/tmp/usb/junos* /var/tmp`, Copy file package agar bisa di jalankan oleh juniper
     2. Via FTP/SCP
         - Pastikan Device sudah memiliki IP untuk transer file
         - Buka apps Winscp(SCP) / Filezila (FTP) untuk transfer File
@@ -60,11 +60,9 @@ Jika device yang akan di upgrade sudah jauh dengan version yang ada sekarang, ma
 
 ## Troubleshoot
 
-**Not enough storage while upgrading Junos EX2300 and EX3400**
+**Not enough storage while upgrading Junos EX2300 and EX3400**, [CEC Juniper Community](https://supportportal.juniper.net/s/article/EX-Not-enough-storage-while-upgrading-Junos-EX2300-and-EX3400?language=en_US)
 
 ![image.png](./images/image1.png)
-
-[CEC Juniper Community](https://supportportal.juniper.net/s/article/EX-Not-enough-storage-while-upgrading-Junos-EX2300-and-EX3400?language=en_US)
 
 ## References
 
