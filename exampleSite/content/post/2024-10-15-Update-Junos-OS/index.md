@@ -1,7 +1,7 @@
 ---
 author: "Muhamad Rafli Maulana Rizki"
 title: "Updating Junos OS Firmware - Juniper"
-date: "2024-09-23"
+date: "2024-10-15"
 pin: 
 image: "/images/image2.png"
 description: Untuk melakukan upgrade firmware **Juniper** (router atau switch), Anda harus mengikuti langkah-langkah berikut dengan hati-hati. Upgrade firmware di perangkat Juniper biasanya dilakukan melalui **Junos OS** yang merupakan sistem operasi perangkat tersebut."
