@@ -339,31 +339,31 @@ fpc test.pas
         if (nilai <= 100) and ( nilai >= 91) then
             begin
                 writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Hiruf : A');    
+                writeln ('Nilai Huruf : A');    
                 writeln ('Selamat Anda Dinyatakan ', lulus);
             end
         else if (nilai <=90) and ( nilai >= 76) then
             begin
                 writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Hiruf : B');
+                writeln ('Nilai Huruf : B');
                 writeln ('Selamat Anda Dinyatakan ', lulus);
             end
         else if (nilai <=75) and (nilai >= 61) then
             begin
                 writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Hiruf : C');
+                writeln ('Nilai Huruf : C');
                 writeln ('Selamat Anda Dinyatakan ', lulus);
             end
         else if (nilai <=60) and (nilai >= 41) then
             begin
                 writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Hiruf : D');
+                writeln ('Nilai Huruf : D');
                 writeln ('Selamat Anda Dinyatakan ', lulus);
             end
         else if (nilai <=40) and (nilai >= 0) then
             begin
                 writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Hiruf : E');
+                writeln ('Nilai Huruf : E');
                 writeln ('Selamat Anda Dinyatakan ', lulus);
             end
     end.
