@@ -318,50 +318,50 @@ fpc test.pas
 {{< asciinema_local "./images/Pertemuan4.cast" >}}  
 
 ## Pertemuan#5
-    ```sh {linenos=true}
-    program Latihan_Pertemuan5; 
-    uses crt;
-    var
-        tugas,uts,uas,nilai : real;
-        lulus,grade : string;
-    begin
-        clrscr;
-        write('Input Nilai Tugas    : '); readln (tugas);
-        write('Input Nilai UTS      : '); readln (uts);
-        write('Input Nilai UAS      : '); readln (uas);
-        nilai := (20/100) * tugas + (30/100) * uts + (50/100) * uas;
-        
-        if (nilai >= 70) then
-            lulus := 'LULUS'
-        else
-            lulus := 'Tidak Lulus';
-        
-        if (nilai <= 100) and ( nilai >= 91) then
-            begin
-                grade := 'A'
-            end
-        else if (nilai <=90) and ( nilai >= 76) then
-            begin
-                grade := 'B'
-            end
-        else if (nilai <=75) and (nilai >= 61) then
-            begin
-                grade := 'C'
-            end
-        else if (nilai <=60) and (nilai >= 41) then
-            begin
-                grade := 'D'
-            end
-        else if (nilai <=40) and (nilai >= 0) then
-            begin
-                grade := 'E'
-            end;
-        
-        writeln ('Nilai Akhir : ', nilai:0:2);
-        writeln ('Nilai Huruf : ', grade);
-        writeln ('Selamat Anda Dinyatakan ', lulus);
-    end.
-    ```
+```sh {linenos=true}
+program Latihan_Pertemuan5; 
+uses crt;
+var
+    tugas,uts,uas,nilai : real;
+    lulus,grade : string;
+begin
+    clrscr;
+    write('Input Nilai Tugas    : '); readln (tugas);
+    write('Input Nilai UTS      : '); readln (uts);
+    write('Input Nilai UAS      : '); readln (uas);
+    nilai := (20/100) * tugas + (30/100) * uts + (50/100) * uas;
+    
+    if (nilai >= 70) then
+        lulus := 'LULUS'
+    else
+        lulus := 'Tidak Lulus';
+    
+    if (nilai <= 100) and ( nilai >= 91) then
+        begin
+            grade := 'A'
+        end
+    else if (nilai <=90) and ( nilai >= 76) then
+        begin
+            grade := 'B'
+        end
+    else if (nilai <=75) and (nilai >= 61) then
+        begin
+            grade := 'C'
+        end
+    else if (nilai <=60) and (nilai >= 41) then
+        begin
+            grade := 'D'
+        end
+    else if (nilai <=40) and (nilai >= 0) then
+        begin
+            grade := 'E'
+        end;
+    
+    writeln ('Nilai Akhir : ', nilai:0:2);
+    writeln ('Nilai Huruf : ', grade);
+    writeln ('Selamat Anda Dinyatakan ', lulus);
+end.
+```
 - Membuat 2 kondisi dalam 1 `if` menggunakan operator logika `and/or/not`
 
 **Run Program**
