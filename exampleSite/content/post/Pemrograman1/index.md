@@ -368,45 +368,45 @@ fpc test.pas
 {{< asciinema_local "./images/pertemuan5.cast" >}} 
 
 ## Pertemuan#6
-    ```sh {linenos=true}
-        program Latihan_Pertemuan6; 
-        uses crt;
-        var
-            golongan,pendidikan : string;
-            gapok, tunjangan : int64;
+```sh {linenos=true}
+program Latihan_Pertemuan6; 
+uses crt;
+var
+    golongan,pendidikan : string;
+    gapok, tunjangan : int64;
+begin
+    clrscr;
+    write('Input Golongan Karyawan (A/B)        : '); readln (golongan);
+    write('Input Pendidikan Karyawan (SMA/S1)   : '); readln (pendidikan);
+    
+    if (golongan = 'A') then
         begin
-            clrscr;
-            write('Input Golongan Karyawan (A/B)        : '); readln (golongan);
-            write('Input Pendidikan Karyawan (SMA/S1)   : '); readln (pendidikan);
-            
-            if (golongan = 'A') then
+            if (pendidikan = 'SMA') then
                 begin
-                    if (pendidikan = 'SMA') then
-                        begin
-                            gapok := 3000000;
-                            tunjangan := 2000000;
-                        end
-                    else
-                        begin
-                            gapok := 4000000;
-                            tunjangan := 3000000;
-                        end
+                    gapok := 3000000;
+                    tunjangan := 2000000;
                 end
             else
                 begin
-                    if (pendidikan = 'SMA') then
-                        begin
-                            gapok := 4000000;
-                            tunjangan := 3000000;
-                        end
-                    else
-                        begin
-                            gapok := 6000000;
-                            tunjangan := 5000000;
-                        end
-                end;
-            writeln('Gaji yang di dapat adalah          : ', gapok+tunjangan);
-        end.
-    ```
+                    gapok := 4000000;
+                    tunjangan := 3000000;
+                end
+        end
+    else
+        begin
+            if (pendidikan = 'SMA') then
+                begin
+                    gapok := 4000000;
+                    tunjangan := 3000000;
+                end
+            else
+                begin
+                    gapok := 6000000;
+                    tunjangan := 5000000;
+                end
+        end;
+    writeln('Gaji yang di dapat adalah          : ', gapok+tunjangan);
+end.
+```
 **Run Program**
 {{< asciinema_local "./images/Pertemuan6.cast" >}}     
