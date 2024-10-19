@@ -1,7 +1,7 @@
 ---
 author: "Muhamad Rafli Maulana Rizki"
 title: "Pemrograman#1 - Pascal"
-date: "2024-09-30"
+date: "2024-10-19"
 pin: 
 image: "./images/pascal_icon.jpg"
 description: "Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis."
@@ -318,12 +318,12 @@ fpc test.pas
 {{< asciinema_local "./images/Pertemuan4.cast" >}}  
 
 ## Pertemuan#5
-```sh {linenos=true}
+    ```sh {linenos=true}
     program Latihan_Pertemuan5; 
     uses crt;
     var
         tugas,uts,uas,nilai : real;
-        lulus : string;
+        lulus,grade : string;
     begin
         clrscr;
         write('Input Nilai Tugas    : '); readln (tugas);
@@ -338,37 +338,75 @@ fpc test.pas
         
         if (nilai <= 100) and ( nilai >= 91) then
             begin
-                writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Huruf : A');    
-                writeln ('Selamat Anda Dinyatakan ', lulus);
+                grade := 'A'
             end
         else if (nilai <=90) and ( nilai >= 76) then
             begin
-                writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Huruf : B');
-                writeln ('Selamat Anda Dinyatakan ', lulus);
+                grade := 'B'
             end
         else if (nilai <=75) and (nilai >= 61) then
             begin
-                writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Huruf : C');
-                writeln ('Selamat Anda Dinyatakan ', lulus);
+                grade := 'C'
             end
         else if (nilai <=60) and (nilai >= 41) then
             begin
-                writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Huruf : D');
-                writeln ('Selamat Anda Dinyatakan ', lulus);
+                grade := 'D'
             end
         else if (nilai <=40) and (nilai >= 0) then
             begin
-                writeln ('Nilai Akhir : ', nilai:0:2);
-                writeln ('Nilai Huruf : E');
-                writeln ('Selamat Anda Dinyatakan ', lulus);
-            end
+                grade := 'E'
+            end;
+        
+        writeln ('Nilai Akhir : ', nilai:0:2);
+        writeln ('Nilai Huruf : ', grade);
+        writeln ('Selamat Anda Dinyatakan ', lulus);
     end.
-```
+    ```
 - Membuat 2 kondisi dalam 1 `if` menggunakan operator logika `and/or/not`
 
 **Run Program**
 {{< asciinema_local "./images/pertemuan5.cast" >}} 
+
+## Pertemuan 6
+    ```sh {linenos=true}
+    program Latihan_Pertemuan6; 
+    uses crt;
+    var
+        golongan,pendidikan : string;
+        gapok, tunjangan : int64;
+    begin
+        clrscr;
+        write('Input Golongan Karyawan (A/B)        : '); readln (golongan);
+        write('Input Pendidikan Karyawan (SMA/S1)   : '); readln (pendidikan);
+        
+        if (golongan = 'A') then
+            begin
+                if (pendidikan = 'SMA') then
+                    begin
+                        gapok := 3000000;
+                        tunjangan := 2000000;
+                    end
+                else
+                    begin
+                        gapok := 4000000;
+                        tunjangan := 3000000;
+                    end
+            end
+        else
+            begin
+                if (pendidikan = 'SMA') then
+                    begin
+                        gapok := 4000000;
+                        tunjangan := 3000000;
+                    end
+                else
+                    begin
+                        gapok := 6000000;
+                        tunjangan := 5000000;
+                    end
+            end;
+        writeln('Gaji yang di dapat adalah          : ', gapok+tunjangan);
+    end.
+    ```
+**Run Program**
+{{< asciinema_local "./images/Pertemuan6.cast" >}}     
