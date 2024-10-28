@@ -3,7 +3,7 @@ author: "Muhamad Rafli Maulana Rizki"
 title: "Create IPSec/IKEv2 Tunnel - Mikrotik"
 date: "2024-10-25"
 pin: 
-image: "/images/image2.png"
+image: "/images/logo.png"
 description: IPsec (Internet Protocol Security) dan IKEv2 (Internet Key Exchange version 2) adalah dua teknologi yang sering digunakan pada device terbaru untuk membuat koneksi Virtual Private Network (VPN) yang aman."
 tags : [
     "Mikrotik",
@@ -49,25 +49,27 @@ IPsec (Internet Protocol Security) dan IKEv2 (Internet Key Exchange version 2) a
 IKEv2 melakukan pertukaran kunci dan Authentication antara klien dan server untuk membuat jalur komunikasi aman.
 
 1. **Connection Initiation (IKE_SA INIT)**
-    - **Langkah 1: Start VPN client connection.**  
+    - **Langkah 1: Start VPN client connection.**
+
         Client dan server menegosiasikan algoritma security yang akan digunakan untuk encryption, data integrity, dan authentication.  
         Contoh algoritma enkripsi: AES (Advanced Encryption Standard).  
         Contoh algoritma otentikasi: SHA (Secure Hash Algorithm).
         
-    - **Langkah 2: Diffie-Hellman key exchange.**  
+    - **Langkah 2: Diffie-Hellman key exchange.**
+
         Kunci kriptografi dibuat menggunakan algoritma Diffie-Hellman, yang memungkinkan klien dan server membuat kunci enkripsi secara aman tanpa harus mengirimkan kunci itu langsung melalui jaringan. Setiap pihak membuat kunci sesi bersama yang hanya diketahui oleh mereka.
         
 2. **Authentication (IKE_AUTH)**
-    - **Langkah 3: Otentikasi klien dan server.**  
+    - **Langkah 3: Otentikasi klien dan server.**
+
         Setelah pertukaran kunci selesai, kedua belah pihak (klien dan server) saling **mengotentikasi** untuk memastikan bahwa mereka adalah pihak yang sah.  
         Proses otentikasi ini dapat dilakukan menggunakan:  
         - **Sertifikat digital** (misalnya, **sertifikat X.509**), atau
         - **Pre-shared key (PSK)**, yaitu kunci rahasia yang telah dibagi sebelumnya.
-    - **Langkah 4: Building a secure tunnel (IPsec Security Association - SA).**  
+    - **Langkah 4: Building a secure tunnel (IPsec Security Association - SA).**
+
         Setelah negosiasi, **IKEv2** membangun **Security Association (SA)**, yang mendefinisikan parameter keamanan untuk sesi IPsec, termasuk apakah akan menggunakan **AH** atau **ESP**.  
         Setelah tunnel VPN terbentuk, data yang ditransfer dilindungi oleh **IPsec** dengan menggunakan protokol **AH atau ESP**, tergantung pada kebutuhan.
-        
----
 
 ### **Fase 2: Transfer Data - IPsec**
 Data mulai dikirimkan melalui tunnel VPN yang telah terbentuk. Protokol **IPsec** bertanggung jawab untuk mengenkripsi, mengotentikasi, dan melindungi integritas data yang ditransmisikan.
@@ -82,21 +84,24 @@ Data mulai dikirimkan melalui tunnel VPN yang telah terbentuk. Protokol **IPsec*
         - **AH**: Memberikan otentikasi dan integritas data, tetapi tidak mengenkripsi data.
         - **ESP**: Mengotentikasi sekaligus mengenkripsi data untuk melindungi kerahasiaannya.
 2. **Data Decryption and Reception**
-    - **Langkah 6: Dekripsi data di sisi server.**  
+    - **Langkah 6: Dekripsi data di sisi server.**
+
         Server VPN menerima paket yang dienkripsi dengan **ESP** atau diotentikasi dengan **AH**. Paket kemudian dideskripsikan menggunakan **key** yang disepakati selama negosiasi IKEv2.  
         Setelah dekripsi berhasil, data diteruskan ke tujuan akhirnya, seperti situs web atau layanan yang diakses pengguna.
         
 3. **Data Integrity Verification**
-    - **Langkah 7: Memeriksa integritas paket.**
-        
+    - **Langkah 7: Memeriksa integritas paket.**     
+
         IPsec memeriksa apakah data telah dimodifikasi selama pengiriman. Algoritma hash (seperti **SHA**) digunakan untuk memastikan integritas data. Jika hash tidak cocok, paket dianggap rusak dan akan ditolak.
         
 4. **Rekeying (Pembaruan Kunci)**
-    - **Langkah 8: Pembaruan kunci sesi.**  
+    - **Langkah 8: Pembaruan kunci sesi.**
+
         Setelah sesi berlangsung untuk waktu tertentu atau setelah jumlah data tertentu ditransfer, **IKEv2** melakukan **rekeying**, yaitu pembaruan kunci sesi. Ini penting untuk menjaga keamanan koneksi dalam jangka panjang.
         
 5. **Connection Closing (Terminating Session)**
-    - **Langkah 9: Menutup sesi VPN.**  
+    - **Langkah 9: Menutup sesi VPN.**
+
         Ketika klien selesai menggunakan VPN, sesi VPN ditutup. **IKEv2** kemudian menghapus parameter keamanan dan kunci sesi untuk mencegah potensi kebocoran atau eksploitasi di masa mendatang.
         
 
@@ -211,8 +216,7 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
         - `ipsec protocols=esp` : menggunakna enkrptip `ESP`
 7. **IPSec Peer**
     
-    **Fungsi**: Mengonfigurasi peer IPSec, yang merupakan rekan (client/server) yang akan terhubung menggunakan VPN.
-    
+    **Fungsi**: Mengonfigurasi peer IPSec, yang merupakan rekan (client/server) yang akan terhubung menggunakan VPN.  
     kebijikan Ini termasuk alamat IP peer, pengaturan key exchange (IKE), dan fase IPsec yang digunakan untuk membangun koneksi.
     
     ![image.png](./images/image%2010.png)
@@ -253,7 +257,9 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
 
 - Handphone
 
-![image.png](./images/252aa49e-1dcf-4bb3-a490-700bb1525245.png)
+<p align="center" width="100%">
+    <img src="./images/252aa49e-1dcf-4bb3-a490-700bb1525245.png" alt="Handphone" style="width: 40%;">
+</p>
 
 - Mac
 
