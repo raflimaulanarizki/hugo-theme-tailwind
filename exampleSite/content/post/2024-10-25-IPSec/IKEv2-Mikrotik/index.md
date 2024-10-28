@@ -144,8 +144,10 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     
     **Fungsi**: Menentukan parameter enkripsi dan autentikasi yang digunakan selama negosiasi IPSec.
     
-    ![image.png](./images/image%205.png)
-    
+    <p align="center" width="100%">
+    <img src="./images/image%205.png" alt="IPSec Proposal" style="width: 50%;">
+    </p>
+
     ```bash
     /ip ipsec proposal
     add auth-algorithms=sha256,sha1 enc-algorithms=aes-256-cbc name=ikev2-proposal pfs-group=modp2048
@@ -174,8 +176,11 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     
     **Fungsi**: Menetapkan profil yang mengatur parameter enkripsi dan hash untuk peer IPSec pada sesi IKE (Internet Key Exchange).
     
-    ![image.png](./images/image%207.png)
     
+    <p align="center" width="100%">
+    <img src="./images/image%207.png" alt="IPSec Profile" style="width: 50%;">
+    </p>
+
     ```bash
     /ip ipsec profile
     add enc-algorithm=aes-256 hash-algorithm=sha256 name=ipsec-ikev2-profile
@@ -235,8 +240,10 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     
     **Fungsi**: Menentukan identitas autentikasi untuk peer IPSec, serta bagaimana kebijakan akan dihasilkan secara otomatis.
     
-    ![image.png](./images/image%2011.png)
-    
+    <p align="center" width="100%">
+    <img src="./images/image%2011.png" alt="IPSec Identity" style="width: 50%;">
+    </p>
+
     ```bash
     /ip ipsec identity
     add generate-policy=port-strict mode-config=vpn_ip-ikev2 peer=ikev2-peer \
@@ -263,7 +270,9 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
 
 - Mac
 
-![image.png](./images/image%2012.png)
+<p align="center" width="100%">
+    <img src="./images/image%2012.png" alt="Mac" style="width: 50%;">
+</p>
 
 ## Check  VPN Connect
 
