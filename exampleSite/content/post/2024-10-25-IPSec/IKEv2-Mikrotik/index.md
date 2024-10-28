@@ -203,10 +203,8 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     
     **Fungsi:** Kebijakan ini menentukan lalu lintas mana yang akan di-enkripsi atau diautentikasi, menggunakan **IPsec Proposal** yang sudah diatur
     
-    ![image.png](./images/image%208.png)
-    
-    ![image.png](./images/image%209.png)
-    
+    | ![image.png](./images/image%208.png) | ![image.png](./images/image%209.png) |
+
     ```bash
     /ip ipsec policy
     add group=ikev2-group proposal=ikev2-proposal template=yes
@@ -294,6 +292,3 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
 
 ![image.png](./images/image%2015.png)
 
-|                                       |                                       |
-|:-------------------------------------:|:-------------------------------------:|
-| ![image.png](./images/image%2015.png) | ![](https://goo.gl/1R3T6h "Tonejito") |
