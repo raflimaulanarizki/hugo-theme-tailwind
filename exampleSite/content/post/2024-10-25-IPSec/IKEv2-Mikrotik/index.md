@@ -203,7 +203,12 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     
     **Fungsi:** Kebijakan ini menentukan lalu lintas mana yang akan di-enkripsi atau diautentikasi, menggunakan **IPsec Proposal** yang sudah diatur
     
-    | ![image.png](./images/image%208.png) | ![image.png](./images/image%209.png) |
+    <table style="width:100%">
+    <tr>
+    <td> <img src="./images/image%208.png" alt="IPSec Policy - General" style="width: 50%;"> </td>
+    <td> <img src="./images/image%209.png" alt="IPSec Policy - Policy" style="width: 50%;"> </td>
+    </tr>
+    </table>
 
     ```bash
     /ip ipsec policy
