@@ -296,4 +296,4 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
 
 |                                       |                                       |
 |:-------------------------------------:|:-------------------------------------:|
-| ![](https://goo.gl/1R3T6h "Tonejito") | ![](https://goo.gl/1R3T6h "Tonejito") |
+| ![image.png](./images/image%2015.png) | ![](https://goo.gl/1R3T6h "Tonejito") |
