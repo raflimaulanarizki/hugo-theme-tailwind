@@ -116,9 +116,11 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
 ![image.png](./images/image%202.png)
 
 1. **IP Pool**
-    
-    ![image.png](./images/image%203.png)
-    
+
+    <p align="center" width="100%">
+    <img src="./images/image%203.png" alt="IP Pool">
+    </p>
+
     ```bash
     /ip pool
     add name=pool-vpn ranges=172.16.1.100-172.16.1.200
@@ -129,8 +131,9 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
 2. **IPSec Mode-Config**
     - **Fungsi**: Mengatur bagaimana IP dan DNS diberikan ke client VPN melalui protokol IPSec.
     
-    ![image.png](./images/image%204.png)
-    
+    <p align="center" width="100%">
+    <img src="./images/image%204.png" alt="IPSec Mode-Config" style="width: 50%;">
+    </p>
     ```bash
     /ip ipsec mode-config
     add address-pool=pool-vpn address-prefix-length=32 name=vpn_ip-ikev2
@@ -164,9 +167,11 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
 4. **IPSec Group**
     
     **Fungsi**: mengelompokkan konfigurasi seperti **proposals** dan **policies,** yang terkait dengan IKEv2.
-    
-    ![image.png](./images/image%206.png)
-    
+
+    <p align="center" width="100%">
+    <img src="./images/image%206.png" alt="IPSec Group">
+    </p>
+
     ```bash
     /ip ipsec policy group 
     add name=ikev2-group
@@ -205,8 +210,8 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     
     <table style="width:100%">
     <tr>
-    <td> <img src="./images/image%208.png" alt="IPSec Policy - General" style="width: 50%;"> </td>
-    <td> <img src="./images/image%209.png" alt="IPSec Policy - Policy" style="width: 50%;"> </td>
+    <td> <img src="./images/image%208.png" alt="IPSec Policy - General"> </td>
+    <td> <img src="./images/image%209.png" alt="IPSec Policy - Policy"> </td>
     </tr>
     </table>
 
@@ -227,8 +232,10 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     **Fungsi**: Mengonfigurasi peer IPSec, yang merupakan rekan (client/server) yang akan terhubung menggunakan VPN.  
     kebijikan Ini termasuk alamat IP peer, pengaturan key exchange (IKE), dan fase IPsec yang digunakan untuk membangun koneksi.
     
-    ![image.png](./images/image%2010.png)
-    
+    <p align="center" width="100%">
+    <img src="./images/image%2010.png" alt="IPSec Peer" style="width: 50%;">
+    </p>
+
     ```bash
     /ip ipsec peer
     add exchange-mode=ike2 name=ikev2-peer passive=yes profile=ipsec-ikev2-profile
