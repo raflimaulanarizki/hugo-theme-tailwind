@@ -410,3 +410,62 @@ end.
 ```
 **Run Program**
 {{< asciinema_local "./images/Pertemuan6.cast" >}}     
+
+## Pertemuan#7
+**Struktur Case-of-Else**
+Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-THEN-ELSE.
+  ```sh
+    // Perbandingan struktur if dengan case-of
+    case (expression) of
+        kondisi 1 : (kode program 1)
+        kondisi 2 : (kode program 2)
+        kondisi 3 : (kode program 3)
+        kondisi 4 : (kode program 4)
+    else
+        (kode program)
+    end
+
+    if (kondisi) then
+        begin
+            (kode program 1)
+        end
+    else if (kondisi) then
+        begin
+            (kode program 2)
+        end;
+    else
+        begin
+            (kode program 2)
+        end;
+    
+  ```
+
+  ```sh {linenos=true}
+    program Latihan_Pertemuan7; 
+    uses crt;
+    var
+        bulan : integer;
+    begin
+        clrscr;
+        write('Input sebuah angka antara 1 - 12 : '); readln (bulan);
+        case (bulan) of
+            1 : writeln('Bulan ke ', bulan, ' adalah : Januari');
+            2 : writeln('Bulan ke ', bulan, ' adalah : Februari');
+            3 : writeln('Bulan ke ', bulan, ' adalah : Maret');
+            4 : writeln('Bulan ke ', bulan, ' adalah : April');
+            5 : writeln('Bulan ke ', bulan, ' adalah : Mei');
+            6 : writeln('Bulan ke ', bulan, ' adalah : Juni');
+            7 : writeln('Bulan ke ', bulan, ' adalah : Juli');
+            8 : writeln('Bulan ke ', bulan, ' adalah : Agustus');
+            9 : writeln('Bulan ke ', bulan, ' adalah : September');
+            10 : writeln('Bulan ke ', bulan, ' adalah : Oktober');
+            11 : writeln('Bulan ke ', bulan, ' adalah : November');
+            12 : writeln('Bulan ke ', bulan, ' adalah : Desember');
+        else
+            writeln('Angka yang anda masukan tidak valid');
+        end;
+    end.
+  ```
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan7.cast" >}}    
