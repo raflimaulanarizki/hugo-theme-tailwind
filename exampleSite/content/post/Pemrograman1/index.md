@@ -424,7 +424,7 @@ Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-T
     else
         (kode program)
     end
-
+    ------------------------------------------------
     if (kondisi) then
         begin
             (kode program 1)
@@ -469,3 +469,107 @@ Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-T
 
 **Run Program**
 {{< asciinema_local "./images/Pertemuan7.cast" >}}    
+
+## Pertemuan#8 (Tugas_Besar)
+
+  ```sh {linenos=true}
+    program Tugas_Besar_Pertemuan8; 
+    uses crt;
+    var
+        waktu : integer;
+        jarak, kecepatan : real;
+
+        durasi,kalori : integer;
+        olahraga : string;
+
+        usia,langkah : integer;
+        kategori : string;
+        
+        olahraga2 : integer;
+    begin
+        clrscr;
+        
+        writeln('=========Soal1==========');
+        writeln('Menghitung Kecepatan');
+        write ('Masukan Waktu (menit) : '); readln (waktu);
+        write ('Masukan Jarak (km) : '); readln (jarak);
+        
+        kecepatan := jarak/waktu*60;
+        
+        writeln('Kecepatan rata-rata Anda adalah : ', kecepatan:0:1, ' km/jam');
+            
+        writeln('=========Soal2==========');
+        writeln('Menghitung Kalori');
+        write ('Masukkan durasi olahraga (menit) : '); readln (durasi);
+        write ('Pilih jenis olahraga (lari/jalan cepat) : '); readln (olahraga);
+        
+        if (olahraga = 'lari') then
+            begin
+                kalori := durasi * 10;
+            end
+        else
+            begin
+                kalori := durasi * 5;
+            end;
+        writeln('Kalori yang terbakar : ', kalori);
+        
+        writeln('=========Soal3==========');
+        writeln('Menghitung Kategori kebugaran');
+        write ('Masukkan usia : '); readln (usia);
+        write ('Masukkan jumlah langkah harian : '); readln (langkah);
+        
+        if (usia < 30) then
+            begin
+                if (langkah >= 10000 ) then
+                    begin
+                        kategori := 'Sangat Bugar';
+                    end
+                else if (langkah < 10000) and (langkah >= 5000) then
+                    begin
+                        kategori := 'Cukup Bugar';
+                    end
+                else
+                    begin
+                        kategori := 'Kurang Bugar';
+                    end
+            end
+        else
+            begin
+                if (langkah >= 8000 ) then
+                    begin
+                        kategori := 'Sangat Bugar';
+                    end
+                else if (langkah < 8000) and (langkah >= 4000) then
+                    begin
+                        kategori := 'Cukup Bugar';
+                    end
+                else
+                    begin
+                        kategori := 'Kurang Bugar';
+                    end
+            end;
+        writeln('Kategori kebugaran Anda : ', kategori);
+
+        writeln('=========Soal4==========');
+        writeln('Manfaat Jenis Olahraga');
+        writeln('Pilih olahraga (1-4)');
+        writeln('1. Lari');
+        writeln('2. Bersepeda');
+        writeln('3. Berenang');
+        writeln('4. Yoga');
+
+        write ('Masukkan pilihan Anda : '); readln (olahraga2);
+        
+        case (olahraga2) of
+            1 : writeln('Manfaat : Meningkatkan kesehatan jantung dan stamina.');
+            2 : writeln('Manfaat : Meningkatkan kekuatan otot kaki dan kebugaran kardio.');
+            3 : writeln('Manfaat : Melatih seluruh otot tubuh dan meningkatkan daya tahan.');
+            4 : writeln('Manfaat : Meningkatkan fleksibilitas dan kesehatan mental.');
+        else
+            writeln('Pilihan tidak tersedia.');
+        end;
+    end.
+  ```
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan8.cast" >}}  
