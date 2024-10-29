@@ -134,6 +134,7 @@ Ketika Client ingin mengakses device di kantor (server/printer) teknologi yang s
     <p align="center" width="100%">
     <img src="./images/image%204.png" alt="IPSec Mode-Config" style="width: 50%;">
     </p>
+    
     ```bash
     /ip ipsec mode-config
     add address-pool=pool-vpn address-prefix-length=32 name=vpn_ip-ikev2
