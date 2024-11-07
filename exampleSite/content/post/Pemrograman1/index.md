@@ -1,7 +1,7 @@
 ---
 author: "Muhamad Rafli Maulana Rizki"
 title: "Pemrograman#1 - Pascal"
-date: "2024-10-19"
+date: "2024-11-7"
 pin: 
 image: "./images/pascal_icon.jpg"
 description: "Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis."
@@ -575,8 +575,7 @@ Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-T
 {{< asciinema_local "./images/Pertemuan8.cast" >}}  
 
 ## Pertemuan#9
-**While-do (Looping)**
-Perulangan while-do adalah perulangan yang dilakukan selama kondisi perulangan bernilai true.
+**While-do (Looping)** adalah perulangan yang dilakukan selama kondisi perulangan bernilai true.
 
 Pemrograman Pascal terdapat 3 statement perulangan :
 - While-do
