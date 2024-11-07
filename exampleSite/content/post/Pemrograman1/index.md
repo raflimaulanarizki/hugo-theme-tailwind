@@ -573,3 +573,49 @@ Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-T
 
 **Run Program**
 {{< asciinema_local "./images/Pertemuan8.cast" >}}  
+
+## Pertemuan#9
+**While-do (Looping)**
+Perulangan while-do adalah perulangan yang dilakukan selama kondisi perulangan bernilai true.
+
+Pemrograman Pascal terdapat 3 statement perulangan :
+- While-do
+- Repeat-until
+- For (for to do & for downto do)
+
+  ```sh
+    while (condition) do
+    begin
+        (kode program yang ingin diulang disini...) 
+        (kode program untuk mengubah condition..) 
+    end;
+  ```
+
+  ```sh
+    program while_do; 
+    uses crt;
+    var
+        kelipatan, batasan, i: integer;
+    begin
+        clrscr;
+        write('Input angka kelipatan yang diinginkan: '); 
+        readln(kelipatan);
+        write('Input batasan angka yang ingin ditampilkan: '); 
+        readln(batasan);
+
+        writeln('Bilangan kelipatan ', kelipatan, ' antara 0 - ', batasan, ':');
+        
+        i := kelipatan; 
+        
+        while (i <= batasan) do
+        begin
+            write(i, ' ');
+            i := i + kelipatan;  
+        end;
+        
+        readln;
+    end.
+  ```
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan9.cast" >}}    
