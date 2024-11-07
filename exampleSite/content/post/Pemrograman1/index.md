@@ -1,7 +1,7 @@
 ---
 author: "Muhamad Rafli Maulana Rizki"
 title: "Pemrograman#1 - Pascal"
-date: "2024-11-7"
+date: "2024-10-17"
 pin: 
 image: "./images/pascal_icon.jpg"
 description: "Pascal ini merupakan salah satu bahasa pemrograman yang sering digunakan pada saat seseorang mempelajari algoritma dan juga pemrograman terutama di bidang akademis."
