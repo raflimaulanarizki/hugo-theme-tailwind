@@ -575,46 +575,284 @@ Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-T
 {{< asciinema_local "./images/Pertemuan8.cast" >}}  
 
 ## Pertemuan#9
-**While-do (Looping)** adalah perulangan yang dilakukan selama kondisi perulangan bernilai true.
+**While-do (Looping)** adalah perulangan yang dilakukan selama kondisi perulangan bernilai true dan pemeriksaan kondisi berada pada awal perulangan baru melakukan action.
 
 Pemrograman Pascal terdapat 3 statement perulangan :
-- While-do
-- Repeat-until
-- For (for to do & for downto do)
+- While-do - Conditional Looping
+- Repeat-until - Conditional Looping
+- For (for to do & for downto do) - Unconditional Looping
 
-  ```sh
-    while (condition) do
+```sh
+while (condition) do
+begin
+    (kode program yang ingin diulang disini...) 
+    (kode program untuk mengubah condition..) 
+end;
+```
+
+```sh {linenos=true}
+program Latihan_Pertemuan9; 
+uses crt;
+var
+    kelipatan, batasan, i: integer;
+begin
+    clrscr;
+    write('Input angka kelipatan yang diinginkan: '); 
+    readln(kelipatan);
+    write('Input batasan angka yang ingin ditampilkan: '); 
+    readln(batasan);
+
+    writeln('Bilangan kelipatan ', kelipatan, ' antara 0 - ', batasan, ':');
+    
+    i := kelipatan; 
+    
+    while (i <= batasan) do
     begin
-        (kode program yang ingin diulang disini...) 
-        (kode program untuk mengubah condition..) 
+        write(i, ' ');
+        i := i + kelipatan;  
     end;
-  ```
+    
+    readln;
+end.
+```
 
-  ```sh
-    program while_do; 
-    uses crt;
-    var
-        kelipatan, batasan, i: integer;
+**Run Program**
+{{< asciinema_local "./images/Pertemuan9.cast" >}}    
+
+## Pertemuan#10
+**REPEAT UNTIL (Looping)** adalah perulangan yang dilakukan selama kondisi perulangan bernilai false, Action terlebih dahulu baru pemeriksaan kondisi berada pada akhir perulangan.
+
+```sh
+REPEAT 
     begin
-        clrscr;
-        write('Input angka kelipatan yang diinginkan: '); 
-        readln(kelipatan);
-        write('Input batasan angka yang ingin ditampilkan: '); 
-        readln(batasan);
+        (kode program yang ingin diulang disini...)
+        (kode program yang untuk mengubah condition..) 
+    end;
+UNTIL (condition)
+```
 
-        writeln('Bilangan kelipatan ', kelipatan, ' antara 0 - ', batasan, ':');
-        
-        i := kelipatan; 
-        
-        while (i <= batasan) do
+```sh {linenos=true}
+program Latihan_Pertemuan10; 
+uses crt;
+var
+    kelipatan, batasan, i: integer;
+begin
+    clrscr;
+    write('Input angka kelipatan yang diinginkan: '); 
+    readln(kelipatan);
+    write('Input batasan angka yang ingin ditampilkan: '); 
+    readln(batasan);
+
+    writeln('Bilangan kelipatan ', kelipatan, ' antara 0 - ', batasan, ':');
+    
+    i := kelipatan; 
+    
+    repeat
         begin
             write(i, ' ');
             i := i + kelipatan;  
         end;
-        
-        readln;
-    end.
-  ```
+    until (i >= batasan) ;
+    
+    readln;
+end.
+```
+- Program akan diekskusi terlebih dahulu, jika kondisinya true atau berhenti dari looping maka program tetap di ekskusi sekali lalu end.
 
 **Run Program**
-{{< asciinema_local "./images/Pertemuan9.cast" >}}    
+{{< asciinema_local "./images/Pertemuan10.cast" >}}    
+
+## Pertemuan#11 (Contoh_Soal)
+```sh {linenos=true}
+program Latihan_Pertemuan11; 
+uses crt;
+var
+    tinggi : real;
+    pantulan : integer;
+
+    panjang, lebar, luas : integer; 
+    jawab: char;
+begin
+    clrscr;
+    writeln('=========Soal1==========');
+    writeln('Menghitung Pantulan Bola');
+    pantulan := 0;
+    write ('Input ketinggian bola : '); readln (tinggi);
+    while (tinggi > 20) do
+    begin
+        pantulan := pantulan + 1; 
+        tinggi := tinggi / 2;
+    end;
+    writeln('Jumlah Pantulan : ', pantulan);
+    
+    writeln;
+    writeln('=========Soal2==========');
+    writeln('Menghitung Persegi Panjang');
+    repeat
+        writeln;
+        write ('Input nilai panjang : '); readln (panjang);
+        write('Input nilai lebar : '); readln (lebar);
+        luas := panjang * lebar;
+        writeln('Luas Persegi panjang adalah ', luas);
+        write ('Apakah anda ingin mengulang program [Y/N] ? '); readln (jawab);
+    until (jawab = 'N') OR (jawab = 'n');
+    writeln('Terimakasih');
+    readln;
+end.
+```
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan11.cast" >}}    
+
+## Pertemuan#12
+**For** adalah perulangan tanpa kondisi (unconditional looping) yang telah diketahui jumlah perulangannya sebelum dieksekusi.
+
+pemrograman pascal terdapat 2 bentuk perulangan for, yaitu:
+- **for to do (For menaik)**, Perulangan dengan kondisi penghitungan bertambah by default +1.
+    ```sh
+        FOR (variabel_counter) := (nilai_awal) TO (nilai_akhir) DO
+            begin
+                (kode program yang ingin diulang disini...) 
+            end;
+    ```
+
+- **for downto do (For menurun)**, Perulangan dengan kondisi penghitungan berkurang by default -1.
+    ```sh
+    FOR (variabel_counter) := (nilai_awal) DOWNTO (nilai_akhir) DO
+        begin
+            (kode program yang ingin diulang disini...) 
+        end;
+    ```
+**Contoh Soal**
+```sh {linenos=true}
+program for_to_do; 
+uses crt;
+var
+    i: integer;
+begin
+    clrscr;
+    writeln('Mencatak angka 1 hingga 100');
+    for i:= 1 to 100 do
+        begin
+            write(i, ' ');
+        end;
+    readln;
+end.
+
+program for_downto_do; 
+uses crt;
+var
+    i: integer;
+begin
+    clrscr;
+    for i := 10 downto 0 do
+        begin
+            writeln('Hitung mundur: ',i);
+        end;
+    readln;
+end.
+```
+
+**Latihan Soal**
+```sh {linenos=true}
+program Latihan_Pertemuan12; 
+uses crt;
+var
+    i, batasan, jumlah: integer;
+begin
+    clrscr;
+    writeln('=========Soal1==========');
+    writeln('Angka kelipatan 2 dari 0 - 100 :');
+    for i := 0 to 100 do
+    begin
+        if i mod 2 = 0 then 
+            write(i, ' ');
+    end;
+    writeln;
+
+    writeln('=========Soal2==========');
+    writeln('Input angka batasan & jumlahkan hasilnya');
+    writeln;
+    
+    write('Input angka batasan : '); readln (batasan);
+    jumlah := 0 ;
+    for i := 1 to batasan do
+    begin
+        write(i, ' ');
+        jumlah := jumlah + i;
+    end;
+    writeln;
+    writeln('Jumlah seluruh angka : ', jumlah);
+    readln;
+end.
+```
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan12.cast" >}}    
+
+## Pertemuan#13 (Contoh_Soal)
+```sh {linenos=true}
+program Latihan_Pertemuan13; 
+uses crt;
+var
+    a, b, counter, hasil : integer;
+    
+    benar, salah, soal, jawaban, urutan, c, d : integer; 
+    nilai : real;
+    jawab : char;
+begin
+    clrscr;
+    writeln('=========Soal1==========');
+    writeln('Menghitung perpangkatan');
+    hasil := 1;
+    write('Input bilangan pertama: '); readln (a);
+    write('Input bilangan kedua : '); readln (b);
+    for counter := 1 to b do
+        begin
+            hasil := hasil * a;
+        end;
+    writeln('Maka nilai ', a, ' pangkat ', b, ' adalah : ', hasil);
+    writeln;
+
+    writeln('=========Soal2==========');
+    writeln('Menghitung perpangkatan');
+    
+    repeat
+        writeln;
+        randomize;
+        benar := 0;
+        salah := 0;
+        write('Input jumlah soal : '); readln (soal);
+        
+        for urutan := 1 to soal do
+            begin
+                c := random(100);
+                d := random(100);
+                write ('Soal ', urutan, ' : ', c, ' + ', d, ' = '); readln (jawaban);
+                
+                if (jawaban = (c + d)) then
+                    begin
+                        benar := benar + 1;
+                    end
+                else
+                    begin
+                        salah := salah + 1;
+                    end;
+            end;
+        nilai := benar / soal * 100; 
+        writeln('Jumlah Jawaban Benar   : ', benar);
+        writeln('Jumlah Jawaban Salah   : ', salah);
+        writeln('Nilai                  : ', nilai:0:0);
+        writeln;
+        
+        write('Apakah anda ingin mengulang [y/n] ? : '); readln (jawab);
+    until (jawab = 'N') OR (jawab = 'n');
+    
+    writeln ('Terima kasih');
+    readln; 
+    
+end.
+```
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan13.cast" >}}    
