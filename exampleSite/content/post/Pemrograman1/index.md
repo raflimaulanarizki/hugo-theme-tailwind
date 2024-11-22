@@ -856,3 +856,124 @@ end.
 
 **Run Program**
 {{< asciinema_local "./images/Pertemuan13.cast" >}}    
+
+## Pertemuan#13
+**Nested Loop (Perulangan bersarang)** adalah adalah perulangan di dalam perulangan.
+
+```sh
+FOR (variabel_counter_1) := (nilai_awal_1) TO (nilai_akhir_1) DO 
+    begin
+        (kode program yang ingin diulang disini...)
+
+        FOR (variabel_counter_2) := (nilai_awal_2) TO (nilai_akhir_2) DO 
+            begin
+                (kode program yang ingin diulang disini...)
+            end;
+    end;
+```
+
+```sh {linenos=true}
+program Latihan_Pertemuan14;
+uses crt;
+var
+    i, b, n, j: integer;
+    jawab: char;
+begin
+    repeat
+        clrscr;
+        write('Masukan Jumlah Baris : '); 
+        readln(n);
+
+        writeln('1.');
+
+        for i := 1 to n do
+            begin
+                for b := n downto i do
+                    begin
+                        write('*', ' ');
+                    end;
+                writeln; 
+            end;
+        writeln;
+
+        writeln ('2.');
+        for  i:= n downto 1 do
+            begin
+                for b := 1 to n do
+                    begin
+                        if (i <= b) then
+                            begin
+                                write('*',' ');
+                            end
+                        else
+                            begin
+                                write(' ',' ');
+                            end;
+                        
+                    end;
+                writeln;
+            end;
+        writeln;
+
+        writeln ('3.');
+        for i:= n downto 1 do
+            begin
+                for b := 1 to n do
+                    begin
+                        if (i <= b) then
+                            begin
+                                write(b,' ');
+                            end
+                        else
+                            begin
+                                write(' ',' ');
+                            end;
+                        
+                    end;
+                writeln;
+            end;
+        writeln;
+
+        writeln ('4.');
+        for i := 1 to n do
+            begin
+
+                for b := 1 to n - i do
+                    begin
+                        write(' ');
+                    end;
+
+                for j := 1 to i do
+                    begin
+                        write('*', ' ');
+                    end;
+
+                writeln; 
+            end;
+        writeln;
+        
+        writeln ('5.');
+        for i := 1 to n do
+            begin
+                for b := 1 to n do
+                    begin
+                        if (i <= b) then
+                            begin
+                                write('*',' ');
+                            end
+                        else
+                            begin
+                                write(' ',' ');
+                            end;
+                    end;
+                writeln;
+            end;
+
+    write('Apakah anda ingin mengulang [y/n] ? : '); readln (jawab);
+    until (jawab = 'N') OR (jawab = 'n');
+    readln;
+end.
+
+```
+**Run Program**
+{{< asciinema_local "./images/Pertemuan14.cast" >}}    
