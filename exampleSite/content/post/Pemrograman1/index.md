@@ -1072,3 +1072,5 @@ end.
 
 **Run Program**
 {{< asciinema_local "./images/Pertemuan15.cast" >}}    
+
+## Selesai SMT1
