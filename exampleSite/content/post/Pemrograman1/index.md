@@ -49,7 +49,7 @@ fpc test.pas
 ./test.pas
 ```
 
-## Pertemuan#1
+## Pertemuan#1 (Pengenalan1)
 
   ```sh {linenos=true}
   //Deklasi Program, termasuk deklasi variable
@@ -78,7 +78,7 @@ fpc test.pas
   **Run Program**
   {{< asciinema_local "./images/Pertemuan1.cast" >}}
 
-## Pertemuan#2
+## Pertemuan#2 (Pengenalan2)
 
   ```sh {linenos=true}
   //Deklasi Program
@@ -144,7 +144,7 @@ fpc test.pas
   **Run Program**
   {{< asciinema_local "./images/Pertemuan2.cast" >}}
 
-## Pertemuan#3
+## Pertemuan#3 (Pengenalan3)
 
   ```sh {linenos=true}
   program Pertemuan3; 
@@ -259,7 +259,7 @@ fpc test.pas
   **Run Program**
   {{< asciinema_local "./images/Pertemuan3.cast" >}}  
 
-## Pertemuan#4
+## Pertemuan#4 (If_Else)
 
 **Struktur Kondisi**
   ```sh
@@ -317,7 +317,7 @@ fpc test.pas
 **Run Program**
 {{< asciinema_local "./images/Pertemuan4.cast" >}}  
 
-## Pertemuan#5
+## Pertemuan#5 (If_Else if_Else)
 ```sh {linenos=true}
 program Latihan_Pertemuan5; 
 uses crt;
@@ -367,7 +367,7 @@ end.
 **Run Program**
 {{< asciinema_local "./images/pertemuan5.cast" >}} 
 
-## Pertemuan#6
+## Pertemuan#6 (Nested If)
 ```sh {linenos=true}
 program Latihan_Pertemuan6; 
 uses crt;
@@ -411,9 +411,8 @@ end.
 **Run Program**
 {{< asciinema_local "./images/Pertemuan6.cast" >}}     
 
-## Pertemuan#7
-**Struktur Case-of-Else**
-Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-THEN-ELSE.
+## Pertemuan#7 (Case_of_else)
+**Case-of-Else** adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-THEN-ELSE.
   ```sh
     // Perbandingan struktur if dengan case-of
     case (expression) of
@@ -574,7 +573,7 @@ Case of adalah bentuk pemilihan / percabangan yang lebih sederhana daripada IF-T
 **Run Program**
 {{< asciinema_local "./images/Pertemuan8.cast" >}}  
 
-## Pertemuan#9
+## Pertemuan#9 (While_do)
 **While-do (Looping)** adalah perulangan yang dilakukan selama kondisi perulangan bernilai true dan pemeriksaan kondisi berada pada awal perulangan baru melakukan action.
 
 Pemrograman Pascal terdapat 3 statement perulangan :
@@ -619,7 +618,7 @@ end.
 **Run Program**
 {{< asciinema_local "./images/Pertemuan9.cast" >}}    
 
-## Pertemuan#10
+## Pertemuan#10 (Repeat_Until)
 **REPEAT UNTIL (Looping)** adalah perulangan yang dilakukan selama kondisi perulangan bernilai false, Action terlebih dahulu baru pemeriksaan kondisi berada pada akhir perulangan.
 
 ```sh
@@ -704,7 +703,7 @@ end.
 **Run Program**
 {{< asciinema_local "./images/Pertemuan11.cast" >}}    
 
-## Pertemuan#12
+## Pertemuan#12 (For)
 **For** adalah perulangan tanpa kondisi (unconditional looping) yang telah diketahui jumlah perulangannya sebelum dieksekusi.
 
 pemrograman pascal terdapat 2 bentuk perulangan for, yaitu:
@@ -857,7 +856,7 @@ end.
 **Run Program**
 {{< asciinema_local "./images/Pertemuan13.cast" >}}    
 
-## Pertemuan#13
+## Pertemuan#14 (Nested_Loop)
 **Nested Loop (Perulangan bersarang)** adalah adalah perulangan di dalam perulangan.
 
 ```sh
@@ -976,4 +975,100 @@ end.
 
 ```
 **Run Program**
-{{< asciinema_local "./images/Pertemuan14.cast" >}}    
+{{< asciinema_local "./images/Pertemuan14.cast" >}}
+
+## Pertemuan#15 (Array)
+**Array** adalah tipe data yang dapat menyimpan sekumpulan element (data) yang bertipe sama.
+
+
+```sh
+program array; 
+type
+    variabel_type : array[indeks_awal..indeks_akhir] of tipe_data ;
+var
+    variable1: variabel_type;
+    variable2: array[indeks_awal..indeks_akhir] of tipe_data;
+begin
+    variable1[1] := nilai;
+    writeln(variable1[1]);
+end.
+```
+
+**Contoh Soal**
+```sh
+Program ArrayKonstan;
+uses crt;
+Const
+    Hari : Array [1..7] of string = ('Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu');
+
+var
+    NoHari: integer;
+
+Begin
+    clrscr;
+    Write('Masukkan No Hari 1-7 : '); readln(NoHari);
+    Write('Hari ke ',NoHari,' adalah ',Hari[NoHari]);
+    readln;
+End.
+```
+
+**Latihan Soal**
+```sh {linenos=true}
+program data_array;
+uses crt;
+type
+    array_angka = array[1..5] of integer;
+var
+    data_angka : array_angka; 
+    i, jumlah, max, min : integer;
+    average : real;
+begin
+    clrscr;
+    jumlah := 0;
+
+    // Input data array
+    for i := 1 to 5 do
+    begin
+        write('Input data ke ', i, ' : '); 
+        readln(data_angka[i]);
+    end;
+
+    // Inisialisasi `max` dan `min` dengan elemen pertama array
+    max := data_angka[1];
+    min := data_angka[1];
+
+    // Cari jumlah, max, dan min
+    for i := 1 to 5 do
+    begin
+        // Tambahkan data ke jumlah
+        jumlah := jumlah + data_angka[i];
+
+        // Cari nilai maksimum
+        if data_angka[i] > max then
+            max := data_angka[i];
+
+        // Cari nilai minimum
+        if data_angka[i] < min then
+            min := data_angka[i];
+    end;
+    
+    average := jumlah / 5;
+
+    writeln;
+    write('Data yang dimasukkan: ');
+    for i := 1 to 5 do
+    begin
+        write(data_angka[i], ' ');
+    end;
+
+    writeln;
+    writeln('Nilai Jumlah       : ', jumlah);
+    writeln('Nilai Tertinggi    : ', max);
+    writeln('Nilai Terendah     : ', min);
+    writeln('Nilai Rata-rata    : ', average:0:0);
+    readln;
+end.
+```
+
+**Run Program**
+{{< asciinema_local "./images/Pertemuan15.cast" >}}    
