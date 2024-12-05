@@ -36,3 +36,8 @@ Look at my <a href="https://cv.raflimaulanarizki.site" target="_blank"> cv </a>o
     <img src="https://img.shields.io/badge/-CENTOS-blue?logo=centos&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
     <img src="https://img.shields.io/badge/-proxmox-E67100?logo=proxmox&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
 </div>
+
+<h3>Certification</h3>
+<div style="display: flex;">
+    <img src="//ipv6.he.net/certification/create_badge.php?pass_name=raflimaulanarizki&amp;badge=2" style="border: 0; width: 250px; height: 194px" alt="IPv6 Certification Badge for raflimaulanarizki"></img>
+</div>
