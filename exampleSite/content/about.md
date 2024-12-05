@@ -39,5 +39,5 @@ Look at my <a href="https://cv.raflimaulanarizki.site" target="_blank"> cv </a>o
 
 <h3>Certification</h3>
 <div style="display: flex;">
-    <img src="//ipv6.he.net/certification/create_badge.php?pass_name=raflimaulanarizki&amp;badge=2" style="border: 0; width: 250px; height: 194px" alt="IPv6 Certification Badge for raflimaulanarizki"></img>
+    <img src="//ipv6.he.net/certification/create_badge.php?pass_name=raflimaulanarizki&amp;badge=2" style="margin: 0; border: 0; width: 250px; height: 194px" alt="IPv6 Certification Badge for raflimaulanarizki"></img>
 </div>
