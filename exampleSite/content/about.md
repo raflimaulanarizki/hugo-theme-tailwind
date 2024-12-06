@@ -37,6 +37,10 @@ Look at my <a href="https://cv.raflimaulanarizki.site" target="_blank"> cv </a>o
     <img src="https://img.shields.io/badge/-proxmox-E67100?logo=proxmox&logoColor=white&style=for-the-badge" style="margin: 0 1px;" alt="debian" />
 </div>
 
+<h3>Badge</h3>
+
+[![An image of @raflimaulanarizki's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/raflimaulanarizki)](https://holopin.io/@raflimaulanarizki)
+
 <h3>Certification</h3>
 <div style="display: flex;">
     <img src="//ipv6.he.net/certification/create_badge.php?pass_name=raflimaulanarizki&amp;badge=2" style="margin: 0; border: 0; width: 250px; height: 194px" alt="IPv6 Certification Badge for raflimaulanarizki"></img>
