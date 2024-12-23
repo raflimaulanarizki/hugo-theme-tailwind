@@ -17,6 +17,10 @@ Upgrade Firmware ini dapat di jalankan pada switch yang telah dibuat **virtual-c
 
 Jika device yang akan di upgrade sudah jauh dengan version yang ada sekarang, maka os yang harus di install harus mulai dari os yang terdekate terlebih dahulu. Misal versi Skrang 12 maka install ke versi 15/18 terlebih dahulu lalu lanjutkan ke versi lainnya.
 
+Pastikan untuk memperbarui versinya mengikuti rekomendasi **JTAC Version** [Junos Software Versions](https://supportportal.juniper.net/s/article/Junos-Software-Versions-Suggested-Releases-to-Consider-and-Evaluate?language=en_US).
+
+Karena JTAC Version adalah versi perangkat lunak yang telah diuji dan direkomendasikan oleh Juniper Technical Assistance Center (JTAC). Versi ini memastikan stabilitas dan kompatibilitas terbaik di perangkat Juniper, sehingga risiko gangguan bisa diminimalkan. 
+
 ## Requirements
 
 - Flashdisk (Kosongan), Biasanya Switch baru
