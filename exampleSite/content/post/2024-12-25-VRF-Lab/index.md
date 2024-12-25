@@ -11,7 +11,7 @@ tags : [
     "VRF",
 ]
 ---
-# Lab#1 - VRF Local
+## Lab#1 - VRF Local
 
 ![image.png](./images//image.png)
 
@@ -20,7 +20,7 @@ Pada lab kali ini akan melakukan konfigurasi VRF Local dengan membuat dua VRF in
 - VRF net1 yang terhubung ke interface Ethernet0/0 dan Ethernet0/2
 - VRF net2 yang terhubung ke interface Ethernet0/1 dan Ethernet0/3
 
-## Configuration
+### Configuration
 
 1. Create VRF Instance
     
@@ -63,7 +63,7 @@ Pada lab kali ini akan melakukan konfigurasi VRF Local dengan membuat dua VRF in
     ```
     
 
-## Check the results
+### Check the results
 
 - Check VRF
     
@@ -198,13 +198,13 @@ Pada lab kali ini akan melakukan konfigurasi VRF Local dengan membuat dua VRF in
     
     - Table routing global kenapa kosong?, di karenakan ip yang di assing sudah di masukan ke dalam instance VRF yang sudah di tentukan.
 
-# Lab#2 - VRF + OSPF
+## Lab#2 - VRF + OSPF
 
 ![image.png](./images/image1.png)
 
 Pada lab kali ini akan melakukan konfigurasi VRF lagi dengan membuat tiga VRF instance yang berbeda. Lalu untuk mengkoneksikan antar networknya menggunakan OSPF VRF di setiap instancenya.
 
-## Configuration
+### Configuration
 
 1. Create VRF Instance
     
@@ -352,7 +352,7 @@ Pada lab kali ini akan melakukan konfigurasi VRF lagi dengan membuat tiga VRF in
     ```
     
 
-## Check the results
+### Check the results
 
 - Check VRF
     
