@@ -11,12 +11,11 @@ tags : [
     "VRF",
 ]
 ---
-
 ![image.png](./images/image.png)
 
 ## 1. Pendahuluan VRF
 
-Virtual Routing and Forwarding (VRF) adalah teknologi virtualisasi jaringan yang memungkinkan beberapa instance routing table terpisah berjalan di perangkat jaringan yang sama. VRF memberikan kemampuan untuk memisahkan rute dan data antara berbagai jaringan tanpa memerlukan perangkat keras tambahan.
+Virtual Routing and Forwarding (VRF) adalah teknologi virtualisasi network yang memungkinkan beberapa instance routing table terpisah tetapi berjalan di perangkat jaringan yang sama. VRF memberikan kemampuan untuk memisahkan rute dan data antara berbagai network tanpa memerlukan hardware tambahan.
 
 ### **a. Tujuan dan Manfaat VRF**
 
@@ -30,8 +29,6 @@ Virtual Routing and Forwarding (VRF) adalah teknologi virtualisasi jaringan yang
 - Jaringan penyedia layanan yang mendukung banyak pelanggan (multi-tenant).
 - Isolasi jaringan dalam perusahaan untuk divisi atau aplikasi yang berbeda.
 - Mendukung VPN Layer 3 di jaringan berbasis MPLS.
-
----
 
 ## **2. Dasar-Dasar VRF**
 
@@ -139,7 +136,7 @@ VRF memungkinkan segmentasi tabel routing sehingga rute dari satu VRF tidak terl
     - **VRF_A:**
         
         ```bash
-        #Configuraiton
+        #Configuration
         ip vrf VRF_A
           rd 192.168.1.1:1
         
@@ -151,7 +148,7 @@ VRF memungkinkan segmentasi tabel routing sehingga rute dari satu VRF tidak terl
     - **VRF_B:**
         
         ```bash
-        #Configuraiton
+        #Configuration
         ip vrf VRF_B
           rd 192.168.1.1:2
         
@@ -243,7 +240,6 @@ VRF memungkinkan segmentasi tabel routing sehingga rute dari satu VRF tidak terl
     
     ```bash
     router#show ip route vrf net1     
-    
     Routing Table: net1
     Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
            D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
@@ -263,7 +259,6 @@ VRF memungkinkan segmentasi tabel routing sehingga rute dari satu VRF tidak terl
           192.168.30.0/24 is variably subnetted, 2 subnets, 2 masks
     C        192.168.30.0/24 is directly connected, Ethernet0/2
     L        192.168.30.1/32 is directly connected, Ethernet0/2
-    
     ```
     
 - `show ip arp vrf [vrf-name]` = Check ARP VRF.
@@ -292,5 +287,4 @@ VRF memungkinkan segmentasi tabel routing sehingga rute dari satu VRF tidak terl
     Tracing the route to 192.168.30.2
     VRF info: (vrf in name/id, vrf out name/id)
       1 192.168.30.2 1 msec 0 msec 0 msec
-    
     ```
