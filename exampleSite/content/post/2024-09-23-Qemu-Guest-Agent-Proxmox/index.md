@@ -46,6 +46,7 @@ apt-get install qemu-guest-agent
 - Start & Enable Package
 ```bash
 systemctl enable --now qemu-guest-agent
+systemctl status qemu-guest-agent
 ```
 
 ### 3. Show after install
