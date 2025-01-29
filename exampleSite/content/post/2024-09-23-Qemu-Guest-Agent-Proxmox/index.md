@@ -38,15 +38,14 @@ Di Proxmox VE, QEMU Guest Agent menyediakan fitur-fitur berikut:
 
 ### 2. Install Package on linux VM
 
+- Install Package
 ```bash
-# Install Package
--> apt-get install qemu-guest-agent
+apt-get install qemu-guest-agent
+```
 
-# Start Package
--> systemctl start qemu-guest-agent
-
-# Enable automatic after boot
--> systemctl enable qemu-guest-agent
+- Start & Enable Package
+```bash
+systemctl enable --now qemu-guest-agent
 ```
 
 ### 3. Show after install
