@@ -50,5 +50,5 @@ systemctl status qemu-guest-agent
 ```
 
 ### 3. Show after install
-Jika sudah selesai maka pada dashboard VM-Proxmox akan terlihat ip yang digunakan
+Jika sudah selesai maka pada dashboard VM-Proxmox akan terlihat ip yang digunakan pada setiap interfacenya
 ![qemu-agent1.png](./images/qemu-agent1.png)
